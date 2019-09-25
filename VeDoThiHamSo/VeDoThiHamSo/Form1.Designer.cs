@@ -56,7 +56,7 @@
             this.DrawingPropertiesMTS});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(684, 24);
+            this.menuStrip.Size = new System.Drawing.Size(784, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -148,7 +148,7 @@
             // ExponentialFunctionMTS
             // 
             this.ExponentialFunctionMTS.Name = "ExponentialFunctionMTS";
-            this.ExponentialFunctionMTS.Size = new System.Drawing.Size(292, 22);
+            this.ExponentialFunctionMTS.Size = new System.Drawing.Size(311, 22);
             this.ExponentialFunctionMTS.Text = "Exponential Function y = a^x";
             // 
             // DrawingPropertiesMTS
@@ -164,31 +164,33 @@
             // ColorMTS
             // 
             this.ColorMTS.Name = "ColorMTS";
-            this.ColorMTS.Size = new System.Drawing.Size(180, 22);
+            this.ColorMTS.Size = new System.Drawing.Size(103, 22);
             this.ColorMTS.Text = "Color";
             // 
             // PenSizeMTS
             // 
             this.PenSizeMTS.Name = "PenSizeMTS";
-            this.PenSizeMTS.Size = new System.Drawing.Size(180, 22);
+            this.PenSizeMTS.Size = new System.Drawing.Size(103, 22);
             this.PenSizeMTS.Text = "Size";
             // 
             // StyleMTS
             // 
             this.StyleMTS.Name = "StyleMTS";
-            this.StyleMTS.Size = new System.Drawing.Size(180, 22);
+            this.StyleMTS.Size = new System.Drawing.Size(103, 22);
             this.StyleMTS.Text = "Style";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 661);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Drawing Function Graphs";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
