@@ -45,18 +45,20 @@
             this.DrawingPropertiesMTS = new System.Windows.Forms.ToolStripMenuItem();
             this.ColorMTS = new System.Windows.Forms.ToolStripMenuItem();
             this.PenSizeMTS = new System.Windows.Forms.ToolStripMenuItem();
-            this.StyleMTS = new System.Windows.Forms.ToolStripMenuItem();
+            this.picMain = new System.Windows.Forms.PictureBox();
             this.menuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMain)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip
             // 
+            this.menuStrip.BackColor = System.Drawing.SystemColors.ControlLight;
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GraphFuntionMTS,
             this.DrawingPropertiesMTS});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip.Size = new System.Drawing.Size(626, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -155,8 +157,7 @@
             // 
             this.DrawingPropertiesMTS.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ColorMTS,
-            this.PenSizeMTS,
-            this.StyleMTS});
+            this.PenSizeMTS});
             this.DrawingPropertiesMTS.Name = "DrawingPropertiesMTS";
             this.DrawingPropertiesMTS.Size = new System.Drawing.Size(119, 20);
             this.DrawingPropertiesMTS.Text = "Drawing Properties";
@@ -173,26 +174,32 @@
             this.PenSizeMTS.Size = new System.Drawing.Size(103, 22);
             this.PenSizeMTS.Text = "Size";
             // 
-            // StyleMTS
+            // picMain
             // 
-            this.StyleMTS.Name = "StyleMTS";
-            this.StyleMTS.Size = new System.Drawing.Size(103, 22);
-            this.StyleMTS.Text = "Style";
+            this.picMain.BackColor = System.Drawing.Color.White;
+            this.picMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picMain.Location = new System.Drawing.Point(12, 27);
+            this.picMain.Name = "picMain";
+            this.picMain.Size = new System.Drawing.Size(602, 601);
+            this.picMain.TabIndex = 1;
+            this.picMain.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ClientSize = new System.Drawing.Size(626, 640);
+            this.Controls.Add(this.picMain);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Drawing Function Graphs";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMain)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,7 +224,7 @@
         private System.Windows.Forms.ToolStripMenuItem DrawingPropertiesMTS;
         private System.Windows.Forms.ToolStripMenuItem ColorMTS;
         private System.Windows.Forms.ToolStripMenuItem PenSizeMTS;
-        private System.Windows.Forms.ToolStripMenuItem StyleMTS;
+        private System.Windows.Forms.PictureBox picMain;
     }
 }
 
