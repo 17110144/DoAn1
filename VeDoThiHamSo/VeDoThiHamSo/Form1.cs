@@ -12,23 +12,28 @@ namespace VeDoThiHamSo
 {
     public partial class Form1 : Form
     {
-        private Color currDrawColor;
-        private int currPenSize;
-
         CoordinateAxis ca = new CoordinateAxis();
-        double a, b, c, d, e;
+        Funtions F = new Funtions();
+        double a, b, c, d;
         double x;
-        Bitmap bmp;
+        Color curColor;
+        int curPenSize;
+        int iFlag;
 
+        Bitmap bmp;
 
         public Form1()
         {
             InitializeComponent();
-            
+            bmp = new Bitmap(picMain.Width, picMain.Height);
+            ca.g = picMain.CreateGraphics();
+            ca.g = Graphics.FromImage(bmp);
+            curColor = Color.Black;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
         }
+
     }
 }
