@@ -13,7 +13,7 @@ namespace VeDoThiHamSo
         public int max_x;
         public int max_y;
         public Graphics g;
-        public int max, min, x0, y0, Scale = 30;
+        public int x0, y0, Scale = 30;
         public CoordinateAxis() { }
 
         public void DrawAxis()

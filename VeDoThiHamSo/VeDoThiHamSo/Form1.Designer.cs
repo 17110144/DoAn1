@@ -106,7 +106,7 @@
             this.txtY2.Location = new System.Drawing.Point(261, 19);
             this.txtY2.Name = "txtY2";
             this.txtY2.Size = new System.Drawing.Size(34, 24);
-            this.txtY2.TabIndex = 19;
+            this.txtY2.TabIndex = 18;
             // 
             // txtX2
             // 
@@ -114,7 +114,7 @@
             this.txtX2.Location = new System.Drawing.Point(182, 18);
             this.txtX2.Name = "txtX2";
             this.txtX2.Size = new System.Drawing.Size(34, 24);
-            this.txtX2.TabIndex = 18;
+            this.txtX2.TabIndex = 17;
             // 
             // lbX2
             // 
@@ -160,7 +160,7 @@
             this.txtY1.Location = new System.Drawing.Point(105, 19);
             this.txtY1.Name = "txtY1";
             this.txtY1.Size = new System.Drawing.Size(33, 24);
-            this.txtY1.TabIndex = 17;
+            this.txtY1.TabIndex = 16;
             // 
             // lbY1
             // 
@@ -205,7 +205,7 @@
             this.txtR.Location = new System.Drawing.Point(236, 13);
             this.txtR.Name = "txtR";
             this.txtR.Size = new System.Drawing.Size(38, 24);
-            this.txtR.TabIndex = 28;
+            this.txtR.TabIndex = 29;
             // 
             // txtX
             // 
@@ -221,7 +221,7 @@
             this.txtY.Location = new System.Drawing.Point(138, 13);
             this.txtY.Name = "txtY";
             this.txtY.Size = new System.Drawing.Size(34, 24);
-            this.txtY.TabIndex = 26;
+            this.txtY.TabIndex = 28;
             // 
             // lbTam0
             // 
@@ -286,7 +286,7 @@
             this.txtC.Location = new System.Drawing.Point(175, 19);
             this.txtC.Name = "txtC";
             this.txtC.Size = new System.Drawing.Size(37, 24);
-            this.txtC.TabIndex = 13;
+            this.txtC.TabIndex = 9;
             // 
             // txtD
             // 
@@ -294,7 +294,7 @@
             this.txtD.Location = new System.Drawing.Point(250, 19);
             this.txtD.Name = "txtD";
             this.txtD.Size = new System.Drawing.Size(37, 24);
-            this.txtD.TabIndex = 12;
+            this.txtD.TabIndex = 10;
             // 
             // txtB
             // 
@@ -302,7 +302,7 @@
             this.txtB.Location = new System.Drawing.Point(102, 19);
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(37, 24);
-            this.txtB.TabIndex = 11;
+            this.txtB.TabIndex = 8;
             // 
             // txtA
             // 
@@ -349,7 +349,7 @@
             this.GraphFuntionMTS});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(626, 24);
+            this.menuStrip.Size = new System.Drawing.Size(923, 24);
             this.menuStrip.TabIndex = 30;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -466,7 +466,7 @@
             this.btnDraw.Location = new System.Drawing.Point(6, 12);
             this.btnDraw.Name = "btnDraw";
             this.btnDraw.Size = new System.Drawing.Size(55, 30);
-            this.btnDraw.TabIndex = 29;
+            this.btnDraw.TabIndex = 20;
             this.btnDraw.Text = "Draw";
             this.btnDraw.UseVisualStyleBackColor = true;
             // 
@@ -505,7 +505,7 @@
             this.picMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picMain.Location = new System.Drawing.Point(12, 90);
             this.picMain.Name = "picMain";
-            this.picMain.Size = new System.Drawing.Size(602, 601);
+            this.picMain.Size = new System.Drawing.Size(900, 600);
             this.picMain.TabIndex = 31;
             this.picMain.TabStop = false;
             // 
@@ -514,7 +514,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(626, 700);
+            this.ClientSize = new System.Drawing.Size(923, 700);
             this.Controls.Add(this.gbStraight);
             this.Controls.Add(this.gbCircle);
             this.Controls.Add(this.gbFuntions);
