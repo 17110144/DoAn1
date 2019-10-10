@@ -8,3 +8,13 @@ D:\Github\DoAn1\VeDoThiHamSo\VeDoThiHamSo\bin\Debug\VeDoThiHamSo.exe
 D:\Github\DoAn1\VeDoThiHamSo\VeDoThiHamSo\bin\Debug\VeDoThiHamSo.pdb
 D:\Github\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.exe
 D:\Github\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.pdb
+F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\bin\Debug\VeDoThiHamSo.exe.config
+F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\bin\Debug\VeDoThiHamSo.exe
+F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\bin\Debug\VeDoThiHamSo.pdb
+F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.csprojAssemblyReference.cache
+F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.Form1.resources
+F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.Properties.Resources.resources
+F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.csproj.GenerateResource.cache
+F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.csproj.CoreCompileInputs.cache
+F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.exe
+F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.pdb

@@ -376,66 +376,77 @@
             this.StraightParagraphMTS.Name = "StraightParagraphMTS";
             this.StraightParagraphMTS.Size = new System.Drawing.Size(311, 22);
             this.StraightParagraphMTS.Text = "Straight";
+            this.StraightParagraphMTS.Click += new System.EventHandler(this.StraightParagraphMTS_Click);
             // 
             // QuadraticFunctionMTS
             // 
             this.QuadraticFunctionMTS.Name = "QuadraticFunctionMTS";
             this.QuadraticFunctionMTS.Size = new System.Drawing.Size(311, 22);
             this.QuadraticFunctionMTS.Text = "Quadratic Function";
+            this.QuadraticFunctionMTS.Click += new System.EventHandler(this.QuadraticFunctionMTS_Click);
             // 
             // CubicFunctionMTS
             // 
             this.CubicFunctionMTS.Name = "CubicFunctionMTS";
             this.CubicFunctionMTS.Size = new System.Drawing.Size(311, 22);
             this.CubicFunctionMTS.Text = "Cubic Function";
+            this.CubicFunctionMTS.Click += new System.EventHandler(this.CubicFunctionMTS_Click);
             // 
             // yaxbcxdToolStripMenuItem
             // 
             this.yaxbcxdToolStripMenuItem.Name = "yaxbcxdToolStripMenuItem";
             this.yaxbcxdToolStripMenuItem.Size = new System.Drawing.Size(311, 22);
             this.yaxbcxdToolStripMenuItem.Text = "y = (ax+b)/(cx+d)";
+            this.yaxbcxdToolStripMenuItem.Click += new System.EventHandler(this.YaxbcxdToolStripMenuItem_Click);
             // 
             // CircleMTS
             // 
             this.CircleMTS.Name = "CircleMTS";
             this.CircleMTS.Size = new System.Drawing.Size(311, 22);
             this.CircleMTS.Text = "Circle";
+            this.CircleMTS.Click += new System.EventHandler(this.CircleMTS_Click);
             // 
             // ElipMTS
             // 
             this.ElipMTS.Name = "ElipMTS";
             this.ElipMTS.Size = new System.Drawing.Size(311, 22);
             this.ElipMTS.Text = "Elip (x^2/a^2) + (y^2/b^2) = 1 [Nhập a và b]";
+            this.ElipMTS.Click += new System.EventHandler(this.ElipMTS_Click);
             // 
             // HyperbolMTS
             // 
             this.HyperbolMTS.Name = "HyperbolMTS";
             this.HyperbolMTS.Size = new System.Drawing.Size(311, 22);
             this.HyperbolMTS.Text = "Hyperbol  (x^2)/a^2 - (y^2)/b^2 = 1";
+            this.HyperbolMTS.Click += new System.EventHandler(this.HyperbolMTS_Click);
             // 
             // AsinwxMTS
             // 
             this.AsinwxMTS.Name = "AsinwxMTS";
             this.AsinwxMTS.Size = new System.Drawing.Size(311, 22);
             this.AsinwxMTS.Text = "y = Asin(wx)";
+            this.AsinwxMTS.Click += new System.EventHandler(this.AsinwxMTS_Click);
             // 
             // AtanwxMTS
             // 
             this.AtanwxMTS.Name = "AtanwxMTS";
             this.AtanwxMTS.Size = new System.Drawing.Size(311, 22);
             this.AtanwxMTS.Text = "y = Atan(wx)";
+            this.AtanwxMTS.Click += new System.EventHandler(this.AtanwxMTS_Click);
             // 
             // LogaxMTS
             // 
             this.LogaxMTS.Name = "LogaxMTS";
             this.LogaxMTS.Size = new System.Drawing.Size(311, 22);
             this.LogaxMTS.Text = "y = loga(x)";
+            this.LogaxMTS.Click += new System.EventHandler(this.LogaxMTS_Click);
             // 
             // ExponentialFunctionMTS
             // 
             this.ExponentialFunctionMTS.Name = "ExponentialFunctionMTS";
             this.ExponentialFunctionMTS.Size = new System.Drawing.Size(311, 22);
             this.ExponentialFunctionMTS.Text = "y = a^x";
+            this.ExponentialFunctionMTS.Click += new System.EventHandler(this.ExponentialFunctionMTS_Click);
             // 
             // gbDraw
             // 
