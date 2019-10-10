@@ -13,7 +13,7 @@ namespace VeDoThiHamSo
         public int max_x;
         public int max_y;
         public Graphics g;
-        public int x0, y0, Scale = 30;
+        public int x0, y0, Scale = 50;
         public CoordinateAxis() { }
 
         public void DrawAxis()
@@ -24,13 +24,28 @@ namespace VeDoThiHamSo
 
             Font f = new Font("Tahoma", 10);
             Brush br = new SolidBrush(Color.Red);
-
-            g.DrawString("O", f, br, x0 - 20, y0);
-            g.DrawString("X", f, br, max_x - 20, y0 + 2);
-            g.DrawString("Y", f, br, x0 + 3, 1);
-
-            Pen pen1 = new Pen(Color.BlueViolet, 1);
+            /*---------------------------------------------------------*/
             int i;
+            Pen pen2 = new Pen(Color.OldLace, 1);
+            for (i = x0; i < max_x; i += Scale / 5)
+            {
+                g.DrawLine(pen2, i, y0 - max_x, i, y0 + max_x);
+            }
+            for (i = x0; i > 0; i -= Scale / 5)
+            {
+                g.DrawLine(pen2, i, y0 - max_x, i, y0 + max_x);
+            }
+
+            for (i = y0; i < max_y; i += Scale / 5)
+            {
+                g.DrawLine(pen2, x0 - max_y, i, x0 + max_y, i);
+            }
+            for (i = y0; i > 0; i -= Scale / 5)
+            {
+                g.DrawLine(pen2, x0 - max_y, i, x0 + max_y, i);
+            }
+            /*-------------------------------------------------*/
+            Pen pen1 = new Pen(Color.BlueViolet, 1);
             for (i = x0 + Scale; i < max_x; i += Scale)
             {
                 g.DrawLine(pen1, i, y0 - 3, i, y0 + 2);
@@ -49,10 +64,14 @@ namespace VeDoThiHamSo
             {
                 g.DrawLine(pen1, x0 - 3, i, x0 + 2, i);
             }
+
+            g.DrawString("O", f, br, x0 - 20, y0);
+            g.DrawString("X", f, br, max_x - 20, y0 + 2);
+            g.DrawString("Y", f, br, x0 + 3, 1);
         }
         public void DrawPoint()
         {
-            Font f = new Font("Tahoma", 8);
+            Font f = new Font("Microsoft Sans Serif", 7);
             int i;
             for (i = x0 + Scale; i < max_x; i += Scale)
             {
