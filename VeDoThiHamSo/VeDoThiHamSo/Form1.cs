@@ -33,7 +33,21 @@ namespace VeDoThiHamSo
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            offGBStraight();
+            offGBFuntions();
+            offGbCircle();
 
+            ca.min = -100;
+            ca.max = 100;
+
+            ca.max_x = picMain.Width;
+            ca.max_y = picMain.Height;
+            ca.x0 = (int)ca.max_x / 2;
+            ca.y0 = (int)ca.max_y / 2;
+
+            ca.DrawAxis();
+            ca.DrawPoint();
+            picMain.Image = bmp;
         }
 
         #region on/off controler

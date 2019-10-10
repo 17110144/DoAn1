@@ -13,17 +13,14 @@ namespace VeDoThiHamSo
         public int max_x;
         public int max_y;
         public Graphics g;
-        public int x0, y0, Scale = 50;
+        public int min, max, x0, y0, Scale = 50;
         public CoordinateAxis() { }
 
         public void DrawAxis()
         {
-            Pen pen = new Pen(Color.BlueViolet, 2);
-            g.DrawLine(pen, 1, y0, max_x, y0);
-            g.DrawLine(pen, x0, 1, x0, max_y);
-
+            Pen pen = new Pen(Color.DarkRed, 3);
             Font f = new Font("Tahoma", 10);
-            Brush br = new SolidBrush(Color.Red);
+            Brush br = new SolidBrush(Color.Red);   
             /*---------------------------------------------------------*/
             int i;
             Pen pen2 = new Pen(Color.OldLace, 1);
@@ -45,26 +42,27 @@ namespace VeDoThiHamSo
                 g.DrawLine(pen2, x0 - max_y, i, x0 + max_y, i);
             }
             /*-------------------------------------------------*/
-            Pen pen1 = new Pen(Color.BlueViolet, 1);
+            Pen pen1 = new Pen(Color.Gainsboro, 2);
             for (i = x0 + Scale; i < max_x; i += Scale)
             {
-                g.DrawLine(pen1, i, y0 - 3, i, y0 + 2);
+                g.DrawLine(pen1, i, y0 - max_x, i, y0 + max_x);
             }
             for (i = x0 - Scale; i > 0; i -= Scale)
             {
-                g.DrawLine(pen1, i, y0 - 3, i, y0 + 2);
+                g.DrawLine(pen1, i, y0 - max_x, i, y0 + max_x);
             }
 
             for (i = y0 + Scale; i < max_y; i += Scale)
             {
-                g.DrawLine(pen1, x0 - 3, i, x0 + 2, i);
+                g.DrawLine(pen1, x0 - max_y, i, x0 + max_y, i);
             }
 
             for (i = y0 - Scale; i > 0; i -= Scale)
             {
-                g.DrawLine(pen1, x0 - 3, i, x0 + 2, i);
+                g.DrawLine(pen1, x0 - max_y, i, x0 + max_y, i);
             }
-
+            g.DrawLine(pen, 1, y0, max_x, y0);
+            g.DrawLine(pen, x0, 1, x0, max_y);
             g.DrawString("O", f, br, x0 - 20, y0);
             g.DrawString("X", f, br, max_x - 20, y0 + 2);
             g.DrawString("Y", f, br, x0 + 3, 1);
