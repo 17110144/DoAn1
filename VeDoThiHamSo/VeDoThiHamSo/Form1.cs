@@ -245,6 +245,7 @@ namespace VeDoThiHamSo
 
         }
 
+
         private void AtanwxMTS_Click(object sender, EventArgs e)
         {
 
@@ -258,6 +259,78 @@ namespace VeDoThiHamSo
         private void ExponentialFunctionMTS_Click(object sender, EventArgs e)
         {
 
+        }
+        private void btnDraw_Click(object sender, EventArgs e)
+        {
+            switch (iFlag)
+            {
+                case 1:
+                    {
+                        
+                    }
+                    break;
+                case 2:
+                    {
+                        a = Convert.ToDouble(txtA.Text.ToString());
+                        b = Convert.ToDouble(txtB.Text.ToString());
+                        c = Convert.ToDouble(txtC.Text.ToString());
+                        Draw();
+                    }
+                    break;
+                case 3:
+                    {
+                        a = Convert.ToDouble(txtA.Text.ToString());
+                        b = Convert.ToDouble(txtB.Text.ToString());
+                        c = Convert.ToDouble(txtC.Text.ToString());
+                        d = Convert.ToDouble(txtD.Text.ToString());
+                        Draw();
+
+                    }
+                    break;
+                case 4:
+                    {
+                       
+                    }
+                    break;
+                case 5:
+                    {
+
+                    }
+                    break;
+                case 6:
+                    {
+
+                    }
+                    break;
+                case 7:
+                    {
+
+                    }
+                    break;
+                case 8:
+                    {
+                       
+                    }
+                    break;
+                case 9:
+                    {
+                       
+                    }
+                    break;
+                case 10:
+                    {
+                      
+                    }
+                    break;
+                case 11:
+                    {
+                      
+                    }
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
 }
