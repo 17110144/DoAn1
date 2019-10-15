@@ -91,6 +91,18 @@ namespace VeDoThiHamSo
             picMain.Image = bmp;
         }
 
+        private void CreateNew()
+        {
+            bmp = new Bitmap(picMain.Width, picMain.Height);
+            ca.g = picMain.CreateGraphics();
+            ca.g = Graphics.FromImage(bmp);
+            ca.x0 = (int)ca.max_x / 2;
+            ca.y0 = (int)ca.max_y / 2;
+            ca.DrawAxis();
+            ca.DrawPoint();
+            picMain.Image = bmp;
+        }
+
         #region on/off controler
         private void onA()
         {
@@ -192,10 +204,104 @@ namespace VeDoThiHamSo
         }
         #endregion
 
+        private float findXt(double x)
+        {
+            float xt = float.Parse(Convert.ToString(ca.x0 + (x * ca.Scale)));
+            return xt;
+
+        }
+        private float findYt(double y)
+        {
+            float yt = float.Parse(Convert.ToString(ca.y0 + (-y * ca.Scale)));
+            return yt;
+        }
+        private void btnDraw_Click(object sender, EventArgs e)
+        {
+            switch (iFlag)
+            {
+                case 1:
+                    {
+                        double x1 = Convert.ToDouble(txtX1.Text.ToString());
+                        double y1 = Convert.ToDouble(txtY1.Text.ToString());
+                        double x2 = Convert.ToDouble(txtX2.Text.ToString());
+                        double y2 = Convert.ToDouble(txtY2.Text.ToString());
+
+                        Pen pen = new Pen(curColor, curPenSize);
+                        ca.g.DrawLine(pen, findXt(x1), findYt(y1), findXt(x2), findYt(y2));
+                        picMain.Image = bmp;
+                    }
+                    break;
+                case 2:
+                    {
+                        a = Convert.ToDouble(txtA.Text.ToString());
+                        b = Convert.ToDouble(txtB.Text.ToString());
+                        c = Convert.ToDouble(txtC.Text.ToString());
+                        Draw();
+                    }
+                    break;
+                case 3:
+                    {
+                        a = Convert.ToDouble(txtA.Text.ToString());
+                        b = Convert.ToDouble(txtB.Text.ToString());
+                        c = Convert.ToDouble(txtC.Text.ToString());
+                        d = Convert.ToDouble(txtD.Text.ToString());
+                        Draw();
+
+                    }
+                    break;
+                case 4:
+                    {
+
+                    }
+                    break;
+                case 5:
+                    {
+
+                    }
+                    break;
+                case 6:
+                    {
+
+                    }
+                    break;
+                case 7:
+                    {
+
+                    }
+                    break;
+                case 8:
+                    {
+
+                    }
+                    break;
+                case 9:
+                    {
+
+                    }
+                    break;
+                case 10:
+                    {
+
+                    }
+                    break;
+                case 11:
+                    {
+
+                    }
+                    break;
+
+                default:
+                    break;
+            }
+        }
+        #region MTS_Click
 
         private void StraightParagraphMTS_Click(object sender, EventArgs e)
         {
-
+            iFlag = 1;
+            onGBStraight();
+            offGBFuntions();
+            offGbCircle();
         }
 
         private void QuadraticFunctionMTS_Click(object sender, EventArgs e)
@@ -211,13 +317,7 @@ namespace VeDoThiHamSo
 
         private void CubicFunctionMTS_Click(object sender, EventArgs e)
         {
-            iFlag = 2;
-            offGBStraight();
-            onGBFuntions();
-            offD();
-            offGbCircle();
-            gbFuntions.Text = "f(x) = ax^2 + bx + c";
-            F.Sender("2");
+
         }
 
         private void YaxbcxdToolStripMenuItem_Click(object sender, EventArgs e)
@@ -246,6 +346,7 @@ namespace VeDoThiHamSo
         }
 
 
+
         private void AtanwxMTS_Click(object sender, EventArgs e)
         {
 
@@ -260,77 +361,11 @@ namespace VeDoThiHamSo
         {
 
         }
-        private void btnDraw_Click(object sender, EventArgs e)
+        #endregion
+
+        private void BtnClear_Click(object sender, EventArgs e)
         {
-            switch (iFlag)
-            {
-                case 1:
-                    {
-                        
-                    }
-                    break;
-                case 2:
-                    {
-                        a = Convert.ToDouble(txtA.Text.ToString());
-                        b = Convert.ToDouble(txtB.Text.ToString());
-                        c = Convert.ToDouble(txtC.Text.ToString());
-                        Draw();
-                    }
-                    break;
-                case 3:
-                    {
-                        a = Convert.ToDouble(txtA.Text.ToString());
-                        b = Convert.ToDouble(txtB.Text.ToString());
-                        c = Convert.ToDouble(txtC.Text.ToString());
-                        d = Convert.ToDouble(txtD.Text.ToString());
-                        Draw();
-
-                    }
-                    break;
-                case 4:
-                    {
-                       
-                    }
-                    break;
-                case 5:
-                    {
-
-                    }
-                    break;
-                case 6:
-                    {
-
-                    }
-                    break;
-                case 7:
-                    {
-
-                    }
-                    break;
-                case 8:
-                    {
-                       
-                    }
-                    break;
-                case 9:
-                    {
-                       
-                    }
-                    break;
-                case 10:
-                    {
-                      
-                    }
-                    break;
-                case 11:
-                    {
-                      
-                    }
-                    break;
-
-                default:
-                    break;
-            }
+            CreateNew();
         }
     }
 }
