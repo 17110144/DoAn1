@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -317,7 +317,13 @@ namespace VeDoThiHamSo
 
         private void CubicFunctionMTS_Click(object sender, EventArgs e)
         {
-
+            iFlag = 3;
+            offGBStraight();
+            onGBFuntions();
+            onAll();
+            offGbCircle();
+            gbFuntions.Text = "f(x) = ax^3 + bx^2 + cx + d";
+            F.Sender("3");
         }
 
         private void YaxbcxdToolStripMenuItem_Click(object sender, EventArgs e)
