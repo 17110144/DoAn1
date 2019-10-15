@@ -88,7 +88,7 @@ namespace VeDoThiHamSo
                     break;
                 case 7:
                     {
-                        fx = (a / x);
+                        
                     }
                     break;
                 case 8:

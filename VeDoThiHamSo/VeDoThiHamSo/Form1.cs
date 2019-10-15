@@ -251,7 +251,11 @@ namespace VeDoThiHamSo
                     break;
                 case 4:
                     {
-
+                        a = Convert.ToDouble(txtA.Text.ToString());
+                        b = Convert.ToDouble(txtB.Text.ToString());
+                        c = Convert.ToDouble(txtC.Text.ToString());
+                        d = Convert.ToDouble(txtD.Text.ToString());
+                        Draw();
                     }
                     break;
                 case 5:
@@ -328,7 +332,13 @@ namespace VeDoThiHamSo
 
         private void YaxbcxdToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            iFlag = 4;
+            offGBStraight();
+            onGBFuntions();
+            onAll();
+            offGbCircle();
+            gbFuntions.Text = "f(x) = (ax + b) / (cx + d)";
+            F.Sender("4");
         }
 
         private void CircleMTS_Click(object sender, EventArgs e)
