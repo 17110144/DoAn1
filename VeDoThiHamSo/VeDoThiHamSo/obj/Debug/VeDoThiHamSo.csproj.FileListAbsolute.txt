@@ -2,7 +2,6 @@ D:\Github\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.csprojAssemblyR
 D:\Github\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.Form1.resources
 D:\Github\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.Properties.Resources.resources
 D:\Github\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.csproj.GenerateResource.cache
-D:\Github\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.csproj.CoreCompileInputs.cache
 D:\Github\DoAn1\VeDoThiHamSo\VeDoThiHamSo\bin\Debug\VeDoThiHamSo.exe.config
 D:\Github\DoAn1\VeDoThiHamSo\VeDoThiHamSo\bin\Debug\VeDoThiHamSo.exe
 D:\Github\DoAn1\VeDoThiHamSo\VeDoThiHamSo\bin\Debug\VeDoThiHamSo.pdb

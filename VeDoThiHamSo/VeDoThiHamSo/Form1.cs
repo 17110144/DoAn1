@@ -49,6 +49,47 @@ namespace VeDoThiHamSo
             ca.DrawPoint();
             picMain.Image = bmp;
         }
+        public void DrawFuntion()
+        {
+            int x1, y1, x2, y2;
+            double dx, fx1, fx2;
+
+            Pen pen = new Pen(curColor, curPenSize);
+            x = ca.min;
+            dx = 1.0f / ca.Scale;
+
+            F.InPut(a, b, c, d);
+
+            fx1 = F.f(x);
+            x1 = ca.x0 + (int)(x * ca.Scale);
+            y1 = ca.y0 - (int)(fx1 * ca.Scale);
+
+
+            while (x < ca.max)
+            {
+                x += dx;
+                fx2 = F.f(x);
+                x2 = ca.x0 + (int)(x * ca.Scale);
+                y2 = ca.y0 - (int)(fx2 * ca.Scale);
+                try
+                {
+                    if (!(fx1 * fx2 < 0 && Math.Abs((int)(fx2 - fx1)) > ca.Scale))
+                    {
+                        ca.g.DrawLine(pen, new PointF(x1, y1), new PointF(x2, y2));
+                    }
+                }
+                catch { }
+
+                x1 = x2;
+                y1 = y2;
+                fx1 = fx2;
+            }
+        }
+        public void Draw()
+        {
+            DrawFuntion();
+            picMain.Image = bmp;
+        }
 
         #region on/off controler
         private void onA()
@@ -159,12 +200,24 @@ namespace VeDoThiHamSo
 
         private void QuadraticFunctionMTS_Click(object sender, EventArgs e)
         {
-
+            iFlag = 2;
+            offGBStraight();
+            onGBFuntions();
+            offD();
+            offGbCircle();
+            gbFuntions.Text = "f(x) = ax^2 + bx + c";
+            F.Sender("2");
         }
 
         private void CubicFunctionMTS_Click(object sender, EventArgs e)
         {
-
+            iFlag = 2;
+            offGBStraight();
+            onGBFuntions();
+            offD();
+            offGbCircle();
+            gbFuntions.Text = "f(x) = ax^2 + bx + c";
+            F.Sender("2");
         }
 
         private void YaxbcxdToolStripMenuItem_Click(object sender, EventArgs e)
