@@ -283,22 +283,28 @@ namespace VeDoThiHamSo
                     break;
                 case 8:
                     {
-
+                        a = Convert.ToDouble(txtA.Text.ToString());
+                        b = Convert.ToDouble(txtB.Text.ToString());
+                        Draw();
                     }
                     break;
                 case 9:
                     {
-
+                        a = Convert.ToDouble(txtA.Text.ToString());
+                        b = Convert.ToDouble(txtB.Text.ToString());
+                        Draw();
                     }
                     break;
                 case 10:
                     {
-
+                        a = Convert.ToDouble(txtA.Text.ToString());
+                        Draw();
                     }
                     break;
                 case 11:
                     {
-
+                        a = Convert.ToDouble(txtA.Text.ToString());
+                        Draw();
                     }
                     break;
 
@@ -369,25 +375,55 @@ namespace VeDoThiHamSo
 
         private void AsinwxMTS_Click(object sender, EventArgs e)
         {
-
+            iFlag = 8;
+            offGBStraight();
+            onGBFuntions();
+            offAll();
+            onA();
+            onB();
+            offGbCircle();
+            gbFuntions.Text = "f(x) = Asin(bx)";
+            F.Sender("8");
         }
 
 
 
         private void AtanwxMTS_Click(object sender, EventArgs e)
         {
-
+            iFlag = 9;
+            offGBStraight();
+            onGBFuntions();
+            offAll();
+            onA();
+            onB();
+            offGbCircle();
+            gbFuntions.Text = "f(x) = Atan(bx)";
+            F.Sender("9");
         }
 
 
         private void LogaxMTS_Click(object sender, EventArgs e)
         {
-
+            iFlag = 10;
+            offGBStraight();
+            onGBFuntions();
+            offAll();
+            onA();
+            offGbCircle();
+            gbFuntions.Text = "f(x) = Loga(x)";
+            F.Sender("10");
         }
 
         private void ExponentialFunctionMTS_Click(object sender, EventArgs e)
         {
-
+            iFlag = 11;
+            offGBStraight();
+            onGBFuntions();
+            offAll();
+            onA();
+            offGbCircle();
+            gbFuntions.Text = "f(x) = a^x";
+            F.Sender("11");
         }
         #endregion
 
