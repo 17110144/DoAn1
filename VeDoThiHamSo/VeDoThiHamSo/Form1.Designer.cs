@@ -491,6 +491,7 @@
             this.cbbCurSize.Name = "cbbCurSize";
             this.cbbCurSize.Size = new System.Drawing.Size(48, 26);
             this.cbbCurSize.TabIndex = 28;
+            this.cbbCurSize.SelectedIndexChanged += new System.EventHandler(this.cbbCurSize_SelectedIndexChanged);
             // 
             // lbSize
             // 
@@ -511,6 +512,7 @@
             this.btnCurColor.Size = new System.Drawing.Size(30, 30);
             this.btnCurColor.TabIndex = 25;
             this.btnCurColor.UseVisualStyleBackColor = false;
+            this.btnCurColor.Click += new System.EventHandler(this.btnCurColor_Click);
             // 
             // picMain
             // 

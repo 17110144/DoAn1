@@ -36,6 +36,7 @@ namespace VeDoThiHamSo
             offGBStraight();
             offGBFuntions();
             offGbCircle();
+            ThemGiaTri();
 
             ca.min = -100;
             ca.max = 100;
@@ -260,7 +261,14 @@ namespace VeDoThiHamSo
                     break;
                 case 5:
                     {
-
+                        Pen pen = new Pen(curColor, curPenSize);
+                        double x = Convert.ToDouble(txtX.Text.ToString());
+                        double y = Convert.ToDouble(txtY.Text.ToString());
+                        float r = float.Parse(txtR.Text.ToString()) * ca.Scale;
+                        float xt = findXt(x) - r;
+                        float yt = findYt(y) - r;
+                        ca.g.DrawEllipse(pen, xt, yt, 2 * r, 2 * r);
+                        picMain.Image = bmp;
                     }
                     break;
                 case 6:
@@ -343,7 +351,10 @@ namespace VeDoThiHamSo
 
         private void CircleMTS_Click(object sender, EventArgs e)
         {
-
+            iFlag = 5;
+            offGBStraight();
+            offGBFuntions();
+            onGbCircle();
         }
 
         private void ElipMTS_Click(object sender, EventArgs e)
@@ -368,6 +379,7 @@ namespace VeDoThiHamSo
 
         }
 
+
         private void LogaxMTS_Click(object sender, EventArgs e)
         {
 
@@ -383,5 +395,28 @@ namespace VeDoThiHamSo
         {
             CreateNew();
         }
+        private void btnCurColor_Click(object sender, EventArgs e)
+        {
+            ColorDialog cdl = new ColorDialog();
+            if (cdl.ShowDialog() == DialogResult.OK)
+            {
+                curColor = cdl.Color;
+                btnCurColor.BackColor = cdl.Color;
+            }
+        }
+        private void ThemGiaTri()
+        {
+            for (int i = 1; i <= 5; i++)
+            {
+                cbbCurSize.Items.Add(i);
+            }
+            cbbCurSize.SelectedIndex = 0;
+
+        }
+        private void cbbCurSize_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            curPenSize = int.Parse(cbbCurSize.Text.ToString());
+        }
+
     }
 }
