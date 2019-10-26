@@ -18,7 +18,7 @@ namespace VeDoThiHamSo
         double x;
         Color curColor;
         int curPenSize;
-        int iFlag;
+        string sFlag;
 
         Bitmap bmp;
 
@@ -72,15 +72,11 @@ namespace VeDoThiHamSo
                 fx2 = F.f(x);
                 x2 = ca.x0 + (int)(x * ca.Scale);
                 y2 = ca.y0 - (int)(fx2 * ca.Scale);
-                try
-                {
-                    if (!(fx1 * fx2 < 0 && Math.Abs((int)(fx2 - fx1)) > ca.Scale))
-                    {
-                        ca.g.DrawLine(pen, new PointF(x1, y1), new PointF(x2, y2));
-                    }
-                }
-                catch { }
 
+                if (!(fx1 * fx2 < 0 && Math.Abs((int)(fx2 - fx1)) > ca.Scale / 2))
+                {
+                    ca.g.DrawLine(pen, new PointF(x1, y1), new PointF(x2, y2));
+                }
                 x1 = x2;
                 y1 = y2;
                 fx1 = fx2;
@@ -218,9 +214,9 @@ namespace VeDoThiHamSo
         }
         private void btnDraw_Click(object sender, EventArgs e)
         {
-            switch (iFlag)
+            switch (sFlag)
             {
-                case 1:
+                case "Straight":
                     {
                         double x1 = Convert.ToDouble(txtX1.Text.ToString());
                         double y1 = Convert.ToDouble(txtY1.Text.ToString());
@@ -232,7 +228,7 @@ namespace VeDoThiHamSo
                         picMain.Image = bmp;
                     }
                     break;
-                case 2:
+                case "Quadratic":
                     {
                         a = Convert.ToDouble(txtA.Text.ToString());
                         b = Convert.ToDouble(txtB.Text.ToString());
@@ -240,7 +236,7 @@ namespace VeDoThiHamSo
                         Draw();
                     }
                     break;
-                case 3:
+                case "Cubic":
                     {
                         a = Convert.ToDouble(txtA.Text.ToString());
                         b = Convert.ToDouble(txtB.Text.ToString());
@@ -250,7 +246,7 @@ namespace VeDoThiHamSo
 
                     }
                     break;
-                case 4:
+                case "axb/cxd":
                     {
                         a = Convert.ToDouble(txtA.Text.ToString());
                         b = Convert.ToDouble(txtB.Text.ToString());
@@ -259,7 +255,7 @@ namespace VeDoThiHamSo
                         Draw();
                     }
                     break;
-                case 5:
+                case "Circle":
                     {
                         Pen pen = new Pen(curColor, curPenSize);
                         double x = Convert.ToDouble(txtX.Text.ToString());
@@ -271,37 +267,37 @@ namespace VeDoThiHamSo
                         picMain.Image = bmp;
                     }
                     break;
-                case 6:
+                case "Elip":
                     {
 
                     }
                     break;
-                case 7:
+                case "Hyperbol":
                     {
 
                     }
                     break;
-                case 8:
+                case "Asinwx":
                     {
                         a = Convert.ToDouble(txtA.Text.ToString());
                         b = Convert.ToDouble(txtB.Text.ToString());
                         Draw();
                     }
                     break;
-                case 9:
+                case "Atanwx":
                     {
                         a = Convert.ToDouble(txtA.Text.ToString());
                         b = Convert.ToDouble(txtB.Text.ToString());
                         Draw();
                     }
                     break;
-                case 10:
+                case "logax":
                     {
                         a = Convert.ToDouble(txtA.Text.ToString());
                         Draw();
                     }
                     break;
-                case 11:
+                case "a^x":
                     {
                         a = Convert.ToDouble(txtA.Text.ToString());
                         Draw();
@@ -316,7 +312,7 @@ namespace VeDoThiHamSo
 
         private void StraightParagraphMTS_Click(object sender, EventArgs e)
         {
-            iFlag = 1;
+            sFlag = "Straight";
             onGBStraight();
             offGBFuntions();
             offGbCircle();
@@ -324,40 +320,40 @@ namespace VeDoThiHamSo
 
         private void QuadraticFunctionMTS_Click(object sender, EventArgs e)
         {
-            iFlag = 2;
+            sFlag = "Quadratic";
             offGBStraight();
             onGBFuntions();
             offD();
             offGbCircle();
             gbFuntions.Text = "f(x) = ax^2 + bx + c";
-            F.Sender("2");
+            F.Sender("Quadratic");
         }
 
         private void CubicFunctionMTS_Click(object sender, EventArgs e)
         {
-            iFlag = 3;
+            sFlag = "Cubic";
             offGBStraight();
             onGBFuntions();
             onAll();
             offGbCircle();
             gbFuntions.Text = "f(x) = ax^3 + bx^2 + cx + d";
-            F.Sender("3");
+            F.Sender("Cubic");
         }
 
         private void YaxbcxdToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            iFlag = 4;
+            sFlag = "axb/cxd";
             offGBStraight();
             onGBFuntions();
             onAll();
             offGbCircle();
             gbFuntions.Text = "f(x) = (ax + b) / (cx + d)";
-            F.Sender("4");
+            F.Sender("axb/cxd");
         }
 
         private void CircleMTS_Click(object sender, EventArgs e)
         {
-            iFlag = 5;
+            sFlag = "Circle";
             offGBStraight();
             offGBFuntions();
             onGbCircle();
@@ -375,7 +371,7 @@ namespace VeDoThiHamSo
 
         private void AsinwxMTS_Click(object sender, EventArgs e)
         {
-            iFlag = 8;
+            sFlag = "Asinwx";
             offGBStraight();
             onGBFuntions();
             offAll();
@@ -390,7 +386,7 @@ namespace VeDoThiHamSo
 
         private void AtanwxMTS_Click(object sender, EventArgs e)
         {
-            iFlag = 9;
+            sFlag = "Atanwx";
             offGBStraight();
             onGBFuntions();
             offAll();
@@ -398,32 +394,32 @@ namespace VeDoThiHamSo
             onB();
             offGbCircle();
             gbFuntions.Text = "f(x) = Atan(bx)";
-            F.Sender("9");
+            F.Sender("Atanwx");
         }
 
 
         private void LogaxMTS_Click(object sender, EventArgs e)
         {
-            iFlag = 10;
+            sFlag = "Logax";
             offGBStraight();
             onGBFuntions();
             offAll();
             onA();
             offGbCircle();
             gbFuntions.Text = "f(x) = Loga(x)";
-            F.Sender("10");
+            F.Sender("Logax");
         }
 
         private void ExponentialFunctionMTS_Click(object sender, EventArgs e)
         {
-            iFlag = 11;
+            sFlag = "a^x";
             offGBStraight();
             onGBFuntions();
             offAll();
             onA();
             offGbCircle();
             gbFuntions.Text = "f(x) = a^x";
-            F.Sender("11");
+            F.Sender("a^x");
         }
         #endregion
 

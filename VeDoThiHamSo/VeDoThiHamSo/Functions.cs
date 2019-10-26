@@ -14,7 +14,7 @@ namespace VeDoThiHamSo
         public double d;
         public double w;
 
-        public int mess;
+        public string mess;
         public delegate void SendMessage(string Message);
         public SendMessage Sender;
         public Functions()
@@ -29,7 +29,7 @@ namespace VeDoThiHamSo
         }
         private void GetMessage(string Message)
         {
-            this.mess = Convert.ToInt32(Message);
+            this.mess = Message;
         }
         public Functions(double a1)
         {
@@ -66,47 +66,47 @@ namespace VeDoThiHamSo
             double fx = -1;
             switch (mess)
             {
-                case 2:
+                case "Quadratic":
                     {
                         fx = (a * (Math.Pow(x, 2)) + b * x + c);
                     }
                     break;
-                case 3:
+                case "Cubic":
                     {
                         fx = (a * (Math.Pow(x, 3)) + b * (Math.Pow(x, 2)) + c * x + d);
                     }
                     break;
-                case 4:
+                case "axb/cxd":
                     {
                         fx = ((a * x + b) / (c * x + d));
                     }
                     break;
-                case 6:
+                case "Elip":
                     {
 
                     }
                     break;
-                case 7:
+                case "Hyperbol":
                     {
                         
                     }
                     break;
-                case 8:
+                case "Asinwx":
                     {
                         fx = (a * (Math.Sin(b * x)));
                     }
                     break;
-                case 9:
+                case "Atanwx":
                     {
                         fx = (a * (Math.Tan(b * x)));
                     }
                     break;
-                case 10:
+                case "logax":
                     {
                         fx = (Math.Log(x, a));
                     }
                     break;
-                case 11:
+                case "a^x":
                     {
                         fx = (Math.Pow(a, x));
                     }
