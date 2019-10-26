@@ -17,3 +17,12 @@ F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.csproj.Generate
 F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.csproj.CoreCompileInputs.cache
 F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.exe
 F:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.pdb
+D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\bin\Debug\VeDoThiHamSo.exe.config
+D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\bin\Debug\VeDoThiHamSo.exe
+D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\bin\Debug\VeDoThiHamSo.pdb
+D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.csprojAssemblyReference.cache
+D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.Form1.resources
+D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.Properties.Resources.resources
+D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.csproj.GenerateResource.cache
+D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.exe
+D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.pdb
