@@ -13,7 +13,7 @@ namespace VeDoThiHamSo
     public partial class Form1 : Form
     {
         CoordinateAxis ca = new CoordinateAxis();
-        Funtions F = new Funtions();
+        Functions F = new Functions();
         double a, b, c, d;
         double x;
         Color curColor;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VeDoThiHamSo
 {
-    class Funtions
+    class Functions
     {
         public double a;
         public double b;
@@ -17,7 +17,7 @@ namespace VeDoThiHamSo
         public int mess;
         public delegate void SendMessage(string Message);
         public SendMessage Sender;
-        public Funtions()
+        public Functions()
         {
             a = 0;
             b = 0;
@@ -31,23 +31,23 @@ namespace VeDoThiHamSo
         {
             this.mess = Convert.ToInt32(Message);
         }
-        public Funtions(double a1)
+        public Functions(double a1)
         {
             a = a1;
         }
-        public Funtions(double a1, double w1)
+        public Functions(double a1, double w1)
         {
             a = a1;
             w = w1;
         }
-        public Funtions(double a1, double b1, double c1)
+        public Functions(double a1, double b1, double c1)
         {
             a = a1;
             b = b1;
             c = c1;
         }
 
-        public Funtions(double a1, double b1, double c1, double d1)
+        public Functions(double a1, double b1, double c1, double d1)
         {
             a = a1;
             b = b1;
