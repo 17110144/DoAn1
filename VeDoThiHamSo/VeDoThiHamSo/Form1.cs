@@ -572,7 +572,7 @@ namespace VeDoThiHamSo
             {
                 MessageBox.Show("Giá trị X không đúng! Hãy nhập lại!");
                 txtX.Focus();
-                txtX.SelectAll()
+                txtX.SelectAll();
             }
         }
 
