@@ -12,7 +12,6 @@ namespace VeDoThiHamSo
         public double b;
         public double c;
         public double d;
-        public double w;
 
         public string mess;
         public delegate void SendMessage(string Message);
@@ -23,37 +22,13 @@ namespace VeDoThiHamSo
             b = 0;
             c = 0;
             d = 0;
-            w = 0;
             Sender = new SendMessage(GetMessage);
-
         }
         private void GetMessage(string Message)
         {
             this.mess = Message;
         }
-        public Functions(double a1)
-        {
-            a = a1;
-        }
-        public Functions(double a1, double w1)
-        {
-            a = a1;
-            w = w1;
-        }
-        public Functions(double a1, double b1, double c1)
-        {
-            a = a1;
-            b = b1;
-            c = c1;
-        }
 
-        public Functions(double a1, double b1, double c1, double d1)
-        {
-            a = a1;
-            b = b1;
-            c = c1;
-            d = d1;
-        }
         public void InPut(double a1, double b1, double c1, double d1)
         {
             a = a1;
@@ -101,7 +76,7 @@ namespace VeDoThiHamSo
                         fx = (a * (Math.Tan(b * x)));
                     }
                     break;
-                case "logax":
+                case "Logax":
                     {
                         fx = (Math.Log(x, a));
                     }

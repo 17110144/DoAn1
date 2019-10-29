@@ -73,10 +73,15 @@ namespace VeDoThiHamSo
                 x2 = ca.x0 + (int)(x * ca.Scale);
                 y2 = ca.y0 - (int)(fx2 * ca.Scale);
 
-                if (!(fx1 * fx2 < 0 && Math.Abs((int)(fx2 - fx1)) > ca.Scale / 2))
+                try
                 {
-                    ca.g.DrawLine(pen, new PointF(x1, y1), new PointF(x2, y2));
+                    if (!(fx1 * fx2 < 0 && Math.Abs((int)(fx2 - fx1)) > ca.Scale / 2))
+                    {
+                        ca.g.DrawLine(pen, new PointF(x1, y1), new PointF(x2, y2));
+                    }
                 }
+                catch { }
+
                 x1 = x2;
                 y1 = y2;
                 fx1 = fx2;
@@ -269,7 +274,7 @@ namespace VeDoThiHamSo
                     break;
                 case "Elip":
                     {
-
+                        
                     }
                     break;
                 case "Hyperbol":
@@ -291,7 +296,7 @@ namespace VeDoThiHamSo
                         Draw();
                     }
                     break;
-                case "logax":
+                case "Logax":
                     {
                         a = Convert.ToDouble(txtA.Text.ToString());
                         Draw();
@@ -308,6 +313,7 @@ namespace VeDoThiHamSo
                     break;
             }
         }
+        
         #region MTS_Click
 
         private void StraightParagraphMTS_Click(object sender, EventArgs e)
@@ -379,7 +385,7 @@ namespace VeDoThiHamSo
             onB();
             offGbCircle();
             gbFuntions.Text = "f(x) = Asin(bx)";
-            F.Sender("8");
+            F.Sender("Asinwx");
         }
 
 
