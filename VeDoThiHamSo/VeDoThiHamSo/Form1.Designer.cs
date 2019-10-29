@@ -107,6 +107,7 @@
             this.txtY2.Name = "txtY2";
             this.txtY2.Size = new System.Drawing.Size(34, 24);
             this.txtY2.TabIndex = 18;
+            this.txtY2.Leave += new System.EventHandler(this.txtY2_Leave);
             // 
             // txtX2
             // 
@@ -115,6 +116,7 @@
             this.txtX2.Name = "txtX2";
             this.txtX2.Size = new System.Drawing.Size(34, 24);
             this.txtX2.TabIndex = 17;
+            this.txtX2.Leave += new System.EventHandler(this.txtX2_Leave);
             // 
             // lbX2
             // 
@@ -133,6 +135,7 @@
             this.txtX1.Name = "txtX1";
             this.txtX1.Size = new System.Drawing.Size(34, 24);
             this.txtX1.TabIndex = 15;
+            this.txtX1.Leave += new System.EventHandler(this.txtX1_Leave);
             // 
             // lbY2
             // 
@@ -161,6 +164,7 @@
             this.txtY1.Name = "txtY1";
             this.txtY1.Size = new System.Drawing.Size(33, 24);
             this.txtY1.TabIndex = 16;
+            this.txtY1.Leave += new System.EventHandler(this.txtY1_Leave);
             // 
             // lbY1
             // 
@@ -206,6 +210,7 @@
             this.txtR.Name = "txtR";
             this.txtR.Size = new System.Drawing.Size(38, 24);
             this.txtR.TabIndex = 29;
+            this.txtR.Leave += new System.EventHandler(this.txtR_Leave);
             // 
             // txtX
             // 
@@ -214,6 +219,7 @@
             this.txtX.Name = "txtX";
             this.txtX.Size = new System.Drawing.Size(34, 24);
             this.txtX.TabIndex = 27;
+            this.txtX.Leave += new System.EventHandler(this.txtX_Leave);
             // 
             // txtY
             // 
@@ -222,6 +228,7 @@
             this.txtY.Name = "txtY";
             this.txtY.Size = new System.Drawing.Size(34, 24);
             this.txtY.TabIndex = 28;
+            this.txtY.Leave += new System.EventHandler(this.txtY_Leave);
             // 
             // lbTam0
             // 
@@ -287,6 +294,7 @@
             this.txtC.Name = "txtC";
             this.txtC.Size = new System.Drawing.Size(37, 24);
             this.txtC.TabIndex = 9;
+            this.txtC.Leave += new System.EventHandler(this.txtC_Leave);
             // 
             // txtD
             // 
@@ -295,6 +303,7 @@
             this.txtD.Name = "txtD";
             this.txtD.Size = new System.Drawing.Size(37, 24);
             this.txtD.TabIndex = 10;
+            this.txtD.Leave += new System.EventHandler(this.txtD_Leave);
             // 
             // txtB
             // 
@@ -303,6 +312,7 @@
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(37, 24);
             this.txtB.TabIndex = 8;
+            this.txtB.Leave += new System.EventHandler(this.txtB_Leave);
             // 
             // txtA
             // 
@@ -311,6 +321,7 @@
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(37, 24);
             this.txtA.TabIndex = 7;
+            this.txtA.Leave += new System.EventHandler(this.txtA_Leave);
             // 
             // lbA
             // 

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -239,6 +240,7 @@ namespace VeDoThiHamSo
             ca.g.DrawEllipse(pen, xt, yt, 2 * r, 2 * r);
             picMain.Image = bmp;
         }
+
         private void btnDraw_Click(object sender, EventArgs e)
         {
             switch (sFlag)
@@ -450,6 +452,7 @@ namespace VeDoThiHamSo
                 btnCurColor.BackColor = cdl.Color;
             }
         }
+
         private void ThemGiaTri()
         {
             for (int i = 1; i <= 5; i++)
@@ -463,6 +466,113 @@ namespace VeDoThiHamSo
         {
             curPenSize = int.Parse(cbbCurSize.Text.ToString());
         }
+        public bool IsNumber(string pText)
+        {
+            Regex regex = null;
+            regex = new Regex(@"^[-+]?[0-9]*\.?[0-9]+$"); 
+            return regex.IsMatch(pText);
+        }
+
+        #region CheckValue
+        private void txtX1_Leave(object sender, EventArgs e)
+        {
+            if (!IsNumber(txtX1.Text))
+            {
+                MessageBox.Show("Giá trị X1 không đúng! Hãy nhập lại!");
+                txtX1.Focus();
+            }
+        }
+
+        private void txtY1_Leave(object sender, EventArgs e)
+        {
+            if (!IsNumber(txtY1.Text))
+            {
+                MessageBox.Show("Giá trị Y1 không đúng! Hãy nhập lại!");
+                txtY1.Focus();
+            }
+        }
+
+        private void txtX2_Leave(object sender, EventArgs e)
+        {
+            if (!IsNumber(txtX2.Text))
+            {
+                MessageBox.Show("Giá trị X2 không đúng! Hãy nhập lại!");
+                txtX2.Focus();
+            }
+        }
+
+        private void txtY2_Leave(object sender, EventArgs e)
+        {
+            if (!IsNumber(txtY2.Text))
+            {
+                MessageBox.Show("Giá trị Y2 không đúng! Hãy nhập lại!");
+                txtY2.Focus();
+            }
+        }
+
+        private void txtA_Leave(object sender, EventArgs e)
+        {
+            if (!IsNumber(txtA.Text))
+            {
+                MessageBox.Show("Giá trị A không đúng! Hãy nhập lại!");
+                txtA.Focus();
+            }
+        }
+
+        private void txtB_Leave(object sender, EventArgs e)
+        {
+            if (!IsNumber(txtB.Text))
+            {
+                MessageBox.Show("Giá trị B không đúng! Hãy nhập lại!");
+                txtB.Focus();
+            }
+        }
+
+        private void txtC_Leave(object sender, EventArgs e)
+        {
+            if (!IsNumber(txtC.Text))
+            {
+                MessageBox.Show("Giá trị C không đúng! Hãy nhập lại!");
+                txtC.Focus();
+            }
+        }
+
+        private void txtD_Leave(object sender, EventArgs e)
+        {
+            if (!IsNumber(txtD.Text))
+            {
+                MessageBox.Show("Giá trị D không đúng! Hãy nhập lại!");
+                txtD.Focus();
+            }
+        }
+
+        private void txtR_Leave(object sender, EventArgs e)
+        {
+            if (!IsNumber(txtR.Text))
+            {
+                MessageBox.Show("Giá trị R không đúng! Hãy nhập lại!");
+                txtR.Focus();
+            }
+        }
+
+        private void txtX_Leave(object sender, EventArgs e)
+        {
+            if (!IsNumber(txtX.Text))
+            {
+                MessageBox.Show("Giá trị X không đúng! Hãy nhập lại!");
+                txtX.Focus();
+            }
+        }
+
+        private void txtY_Leave(object sender, EventArgs e)
+        {
+            if (!IsNumber(txtY.Text))
+            {
+                MessageBox.Show("Giá trị Y không đúng! Hãy nhập lại!");
+                txtY.Focus();
+            }
+        }
+        #endregion
 
     }
 }
