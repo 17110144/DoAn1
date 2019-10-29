@@ -217,20 +217,35 @@ namespace VeDoThiHamSo
             float yt = float.Parse(Convert.ToString(ca.y0 + (-y * ca.Scale)));
             return yt;
         }
+        private void DrawStraight()
+        {
+            double x1 = Convert.ToDouble(txtX1.Text.ToString());
+            double y1 = Convert.ToDouble(txtY1.Text.ToString());
+            double x2 = Convert.ToDouble(txtX2.Text.ToString());
+            double y2 = Convert.ToDouble(txtY2.Text.ToString());
+
+            Pen pen = new Pen(curColor, curPenSize);
+            ca.g.DrawLine(pen, findXt(x1), findYt(y1), findXt(x2), findYt(y2));
+            picMain.Image = bmp;
+        }
+        private void DrawCircle()
+        {
+            Pen pen = new Pen(curColor, curPenSize);
+            double x = Convert.ToDouble(txtX.Text.ToString());
+            double y = Convert.ToDouble(txtY.Text.ToString());
+            float r = float.Parse(txtR.Text.ToString()) * ca.Scale;
+            float xt = findXt(x) - r;
+            float yt = findYt(y) - r;
+            ca.g.DrawEllipse(pen, xt, yt, 2 * r, 2 * r);
+            picMain.Image = bmp;
+        }
         private void btnDraw_Click(object sender, EventArgs e)
         {
             switch (sFlag)
             {
                 case "Straight":
                     {
-                        double x1 = Convert.ToDouble(txtX1.Text.ToString());
-                        double y1 = Convert.ToDouble(txtY1.Text.ToString());
-                        double x2 = Convert.ToDouble(txtX2.Text.ToString());
-                        double y2 = Convert.ToDouble(txtY2.Text.ToString());
-
-                        Pen pen = new Pen(curColor, curPenSize);
-                        ca.g.DrawLine(pen, findXt(x1), findYt(y1), findXt(x2), findYt(y2));
-                        picMain.Image = bmp;
+                        DrawStraight();
                     }
                     break;
                 case "Quadratic":
@@ -262,14 +277,7 @@ namespace VeDoThiHamSo
                     break;
                 case "Circle":
                     {
-                        Pen pen = new Pen(curColor, curPenSize);
-                        double x = Convert.ToDouble(txtX.Text.ToString());
-                        double y = Convert.ToDouble(txtY.Text.ToString());
-                        float r = float.Parse(txtR.Text.ToString()) * ca.Scale;
-                        float xt = findXt(x) - r;
-                        float yt = findYt(y) - r;
-                        ca.g.DrawEllipse(pen, xt, yt, 2 * r, 2 * r);
-                        picMain.Image = bmp;
+                        DrawCircle();
                     }
                     break;
                 case "Elip":
