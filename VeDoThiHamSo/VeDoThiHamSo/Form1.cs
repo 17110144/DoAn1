@@ -466,20 +466,23 @@ namespace VeDoThiHamSo
         {
             curPenSize = int.Parse(cbbCurSize.Text.ToString());
         }
+
+
+        #region CheckValue
         public bool IsNumber(string pText)
         {
             Regex regex = null;
-            regex = new Regex(@"^[-+]?[0-9]*\.?[0-9]+$"); 
+            regex = new Regex(@"^[-+]?[0-9]*\.?[0-9]+$");
             return regex.IsMatch(pText);
         }
 
-        #region CheckValue
         private void txtX1_Leave(object sender, EventArgs e)
         {
             if (!IsNumber(txtX1.Text))
             {
                 MessageBox.Show("Giá trị X1 không đúng! Hãy nhập lại!");
                 txtX1.Focus();
+                txtX1.SelectAll();
             }
         }
 
@@ -489,6 +492,7 @@ namespace VeDoThiHamSo
             {
                 MessageBox.Show("Giá trị Y1 không đúng! Hãy nhập lại!");
                 txtY1.Focus();
+                txtY1.SelectAll();
             }
         }
 
@@ -498,6 +502,7 @@ namespace VeDoThiHamSo
             {
                 MessageBox.Show("Giá trị X2 không đúng! Hãy nhập lại!");
                 txtX2.Focus();
+                txtX2.SelectAll();
             }
         }
 
@@ -507,6 +512,7 @@ namespace VeDoThiHamSo
             {
                 MessageBox.Show("Giá trị Y2 không đúng! Hãy nhập lại!");
                 txtY2.Focus();
+                txtY2.SelectAll();
             }
         }
 
@@ -516,6 +522,7 @@ namespace VeDoThiHamSo
             {
                 MessageBox.Show("Giá trị A không đúng! Hãy nhập lại!");
                 txtA.Focus();
+                txtA.SelectAll();
             }
         }
 
@@ -525,6 +532,7 @@ namespace VeDoThiHamSo
             {
                 MessageBox.Show("Giá trị B không đúng! Hãy nhập lại!");
                 txtB.Focus();
+                txtB.SelectAll();
             }
         }
 
@@ -534,6 +542,7 @@ namespace VeDoThiHamSo
             {
                 MessageBox.Show("Giá trị C không đúng! Hãy nhập lại!");
                 txtC.Focus();
+                txtC.SelectAll();
             }
         }
 
@@ -543,6 +552,7 @@ namespace VeDoThiHamSo
             {
                 MessageBox.Show("Giá trị D không đúng! Hãy nhập lại!");
                 txtD.Focus();
+                txtD.SelectAll();
             }
         }
 
@@ -552,6 +562,7 @@ namespace VeDoThiHamSo
             {
                 MessageBox.Show("Giá trị R không đúng! Hãy nhập lại!");
                 txtR.Focus();
+                txtR.SelectAll();
             }
         }
 
@@ -561,6 +572,7 @@ namespace VeDoThiHamSo
             {
                 MessageBox.Show("Giá trị X không đúng! Hãy nhập lại!");
                 txtX.Focus();
+                txtX.SelectAll()
             }
         }
 
@@ -570,6 +582,7 @@ namespace VeDoThiHamSo
             {
                 MessageBox.Show("Giá trị Y không đúng! Hãy nhập lại!");
                 txtY.Focus();
+                txtY.SelectAll();
             }
         }
         #endregion
