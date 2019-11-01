@@ -15,7 +15,9 @@ namespace VeDoThiHamSo
     {
         CoordinateAxis ca = new CoordinateAxis();
         Functions F = new Functions();
-        double a, b, c, d;
+        public static string X1, X2, Y1, Y2;
+        public static string X, Y, R;
+        public static double a, b, c, d;
         double x;
         Color curColor;
         int curPenSize;
@@ -220,10 +222,10 @@ namespace VeDoThiHamSo
         }
         private void DrawStraight()
         {
-            double x1 = Convert.ToDouble(txtX1.Text.ToString());
-            double y1 = Convert.ToDouble(txtY1.Text.ToString());
-            double x2 = Convert.ToDouble(txtX2.Text.ToString());
-            double y2 = Convert.ToDouble(txtY2.Text.ToString());
+            double x1 = Convert.ToDouble(lbX1v.Text.ToString());
+            double y1 = Convert.ToDouble(lbY1v.Text.ToString());
+            double x2 = Convert.ToDouble(lbX2v.Text.ToString());
+            double y2 = Convert.ToDouble(lbY2v.Text.ToString());
 
             Pen pen = new Pen(curColor, curPenSize);
             ca.g.DrawLine(pen, findXt(x1), findYt(y1), findXt(x2), findYt(y2));
@@ -232,9 +234,9 @@ namespace VeDoThiHamSo
         private void DrawCircle()
         {
             Pen pen = new Pen(curColor, curPenSize);
-            double x = Convert.ToDouble(txtX.Text.ToString());
-            double y = Convert.ToDouble(txtY.Text.ToString());
-            float r = float.Parse(txtR.Text.ToString()) * ca.Scale;
+            double x = Convert.ToDouble(lbXv.Text.ToString());
+            double y = Convert.ToDouble(lbYv.Text.ToString());
+            float r = float.Parse(lbRv.Text.ToString()) * ca.Scale;
             float xt = findXt(x) - r;
             float yt = findYt(y) - r;
             ca.g.DrawEllipse(pen, xt, yt, 2 * r, 2 * r);
@@ -332,6 +334,12 @@ namespace VeDoThiHamSo
             onGBStraight();
             offGBFuntions();
             offGbCircle();
+            InsertStraightValue st = new InsertStraightValue();
+            st.ShowDialog();
+            this.lbX1v.Text = X1;
+            this.lbY1v.Text = Y1;
+            this.lbX2v.Text = X2;
+            this.lbY2v.Text = Y2;
         }
 
         private void QuadraticFunctionMTS_Click(object sender, EventArgs e)
@@ -373,6 +381,11 @@ namespace VeDoThiHamSo
             offGBStraight();
             offGBFuntions();
             onGbCircle();
+            InsertCircleValue c = new InsertCircleValue();
+            c.ShowDialog();
+            this.lbXv.Text = X;
+            this.lbYv.Text = Y;
+            this.lbRv.Text = R;
         }
 
         private void ElipMTS_Click(object sender, EventArgs e)
@@ -469,52 +482,13 @@ namespace VeDoThiHamSo
 
 
         #region CheckValue
-        public bool IsNumber(string pText)
+        static public bool IsNumber(string pText)
         {
             Regex regex = null;
             regex = new Regex(@"^[-+]?[0-9]*\.?[0-9]+$");
             return regex.IsMatch(pText);
         }
 
-        private void txtX1_Leave(object sender, EventArgs e)
-        {
-            if (!IsNumber(txtX1.Text))
-            {
-                MessageBox.Show("Giá trị X1 không đúng! Hãy nhập lại!");
-                txtX1.Focus();
-                txtX1.SelectAll();
-            }
-        }
-
-        private void txtY1_Leave(object sender, EventArgs e)
-        {
-            if (!IsNumber(txtY1.Text))
-            {
-                MessageBox.Show("Giá trị Y1 không đúng! Hãy nhập lại!");
-                txtY1.Focus();
-                txtY1.SelectAll();
-            }
-        }
-
-        private void txtX2_Leave(object sender, EventArgs e)
-        {
-            if (!IsNumber(txtX2.Text))
-            {
-                MessageBox.Show("Giá trị X2 không đúng! Hãy nhập lại!");
-                txtX2.Focus();
-                txtX2.SelectAll();
-            }
-        }
-
-        private void txtY2_Leave(object sender, EventArgs e)
-        {
-            if (!IsNumber(txtY2.Text))
-            {
-                MessageBox.Show("Giá trị Y2 không đúng! Hãy nhập lại!");
-                txtY2.Focus();
-                txtY2.SelectAll();
-            }
-        }
 
         private void txtA_Leave(object sender, EventArgs e)
         {
@@ -555,36 +529,7 @@ namespace VeDoThiHamSo
                 txtD.SelectAll();
             }
         }
-
-        private void txtR_Leave(object sender, EventArgs e)
-        {
-            if (!IsNumber(txtR.Text))
-            {
-                MessageBox.Show("Giá trị R không đúng! Hãy nhập lại!");
-                txtR.Focus();
-                txtR.SelectAll();
-            }
-        }
-
-        private void txtX_Leave(object sender, EventArgs e)
-        {
-            if (!IsNumber(txtX.Text))
-            {
-                MessageBox.Show("Giá trị X không đúng! Hãy nhập lại!");
-                txtX.Focus();
-                txtX.SelectAll();
-            }
-        }
-
-        private void txtY_Leave(object sender, EventArgs e)
-        {
-            if (!IsNumber(txtY.Text))
-            {
-                MessageBox.Show("Giá trị Y không đúng! Hãy nhập lại!");
-                txtY.Focus();
-                txtY.SelectAll();
-            }
-        }
+      
         #endregion
 
     }

@@ -29,19 +29,12 @@
         private void InitializeComponent()
         {
             this.gbStraight = new System.Windows.Forms.GroupBox();
-            this.txtY2 = new System.Windows.Forms.TextBox();
-            this.txtX2 = new System.Windows.Forms.TextBox();
             this.lbX2 = new System.Windows.Forms.Label();
-            this.txtX1 = new System.Windows.Forms.TextBox();
             this.lbY2 = new System.Windows.Forms.Label();
             this.lbX1 = new System.Windows.Forms.Label();
-            this.txtY1 = new System.Windows.Forms.TextBox();
             this.lbY1 = new System.Windows.Forms.Label();
             this.lbC = new System.Windows.Forms.Label();
             this.gbCircle = new System.Windows.Forms.GroupBox();
-            this.txtR = new System.Windows.Forms.TextBox();
-            this.txtX = new System.Windows.Forms.TextBox();
-            this.txtY = new System.Windows.Forms.TextBox();
             this.lbTam0 = new System.Windows.Forms.Label();
             this.lbX = new System.Windows.Forms.Label();
             this.lbY = new System.Windows.Forms.Label();
@@ -74,6 +67,13 @@
             this.lbSize = new System.Windows.Forms.Label();
             this.btnCurColor = new System.Windows.Forms.Button();
             this.picMain = new System.Windows.Forms.PictureBox();
+            this.lbX1v = new System.Windows.Forms.Label();
+            this.lbY1v = new System.Windows.Forms.Label();
+            this.lbX2v = new System.Windows.Forms.Label();
+            this.lbY2v = new System.Windows.Forms.Label();
+            this.lbXv = new System.Windows.Forms.Label();
+            this.lbYv = new System.Windows.Forms.Label();
+            this.lbRv = new System.Windows.Forms.Label();
             this.gbStraight.SuspendLayout();
             this.gbCircle.SuspendLayout();
             this.gbFuntions.SuspendLayout();
@@ -84,13 +84,13 @@
             // 
             // gbStraight
             // 
-            this.gbStraight.Controls.Add(this.txtY2);
-            this.gbStraight.Controls.Add(this.txtX2);
+            this.gbStraight.Controls.Add(this.lbY2v);
+            this.gbStraight.Controls.Add(this.lbX2v);
+            this.gbStraight.Controls.Add(this.lbY1v);
+            this.gbStraight.Controls.Add(this.lbX1v);
             this.gbStraight.Controls.Add(this.lbX2);
-            this.gbStraight.Controls.Add(this.txtX1);
             this.gbStraight.Controls.Add(this.lbY2);
             this.gbStraight.Controls.Add(this.lbX1);
-            this.gbStraight.Controls.Add(this.txtY1);
             this.gbStraight.Controls.Add(this.lbY1);
             this.gbStraight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbStraight.Location = new System.Drawing.Point(15, 28);
@@ -100,42 +100,15 @@
             this.gbStraight.TabStop = false;
             this.gbStraight.Text = "Straight";
             // 
-            // txtY2
-            // 
-            this.txtY2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtY2.Location = new System.Drawing.Point(261, 19);
-            this.txtY2.Name = "txtY2";
-            this.txtY2.Size = new System.Drawing.Size(34, 24);
-            this.txtY2.TabIndex = 18;
-            this.txtY2.Leave += new System.EventHandler(this.txtY2_Leave);
-            // 
-            // txtX2
-            // 
-            this.txtX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtX2.Location = new System.Drawing.Point(182, 18);
-            this.txtX2.Name = "txtX2";
-            this.txtX2.Size = new System.Drawing.Size(34, 24);
-            this.txtX2.TabIndex = 17;
-            this.txtX2.Leave += new System.EventHandler(this.txtX2_Leave);
-            // 
             // lbX2
             // 
             this.lbX2.AutoSize = true;
             this.lbX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbX2.Location = new System.Drawing.Point(154, 22);
             this.lbX2.Name = "lbX2";
-            this.lbX2.Size = new System.Drawing.Size(35, 18);
+            this.lbX2.Size = new System.Drawing.Size(43, 18);
             this.lbX2.TabIndex = 13;
-            this.lbX2.Text = "x2 : ";
-            // 
-            // txtX1
-            // 
-            this.txtX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtX1.Location = new System.Drawing.Point(36, 19);
-            this.txtX1.Name = "txtX1";
-            this.txtX1.Size = new System.Drawing.Size(34, 24);
-            this.txtX1.TabIndex = 15;
-            this.txtX1.Leave += new System.EventHandler(this.txtX1_Leave);
+            this.lbX2.Text = "X2 = ";
             // 
             // lbY2
             // 
@@ -143,9 +116,9 @@
             this.lbY2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbY2.Location = new System.Drawing.Point(231, 22);
             this.lbY2.Name = "lbY2";
-            this.lbY2.Size = new System.Drawing.Size(35, 18);
+            this.lbY2.Size = new System.Drawing.Size(42, 18);
             this.lbY2.TabIndex = 14;
-            this.lbY2.Text = "y2 : ";
+            this.lbY2.Text = "Y2 = ";
             // 
             // lbX1
             // 
@@ -153,28 +126,19 @@
             this.lbX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbX1.Location = new System.Drawing.Point(6, 22);
             this.lbX1.Name = "lbX1";
-            this.lbX1.Size = new System.Drawing.Size(35, 18);
+            this.lbX1.Size = new System.Drawing.Size(39, 18);
             this.lbX1.TabIndex = 11;
-            this.lbX1.Text = "x1 : ";
-            // 
-            // txtY1
-            // 
-            this.txtY1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtY1.Location = new System.Drawing.Point(105, 19);
-            this.txtY1.Name = "txtY1";
-            this.txtY1.Size = new System.Drawing.Size(33, 24);
-            this.txtY1.TabIndex = 16;
-            this.txtY1.Leave += new System.EventHandler(this.txtY1_Leave);
+            this.lbX1.Text = "X1 =";
             // 
             // lbY1
             // 
             this.lbY1.AutoSize = true;
             this.lbY1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbY1.Location = new System.Drawing.Point(76, 22);
+            this.lbY1.Location = new System.Drawing.Point(78, 22);
             this.lbY1.Name = "lbY1";
-            this.lbY1.Size = new System.Drawing.Size(35, 18);
+            this.lbY1.Size = new System.Drawing.Size(38, 18);
             this.lbY1.TabIndex = 12;
-            this.lbY1.Text = "y1 : ";
+            this.lbY1.Text = "Y1 =";
             // 
             // lbC
             // 
@@ -188,9 +152,9 @@
             // 
             // gbCircle
             // 
-            this.gbCircle.Controls.Add(this.txtR);
-            this.gbCircle.Controls.Add(this.txtX);
-            this.gbCircle.Controls.Add(this.txtY);
+            this.gbCircle.Controls.Add(this.lbRv);
+            this.gbCircle.Controls.Add(this.lbYv);
+            this.gbCircle.Controls.Add(this.lbXv);
             this.gbCircle.Controls.Add(this.lbTam0);
             this.gbCircle.Controls.Add(this.lbX);
             this.gbCircle.Controls.Add(this.lbY);
@@ -202,33 +166,6 @@
             this.gbCircle.TabIndex = 34;
             this.gbCircle.TabStop = false;
             this.gbCircle.Text = "Circle";
-            // 
-            // txtR
-            // 
-            this.txtR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtR.Location = new System.Drawing.Point(236, 13);
-            this.txtR.Name = "txtR";
-            this.txtR.Size = new System.Drawing.Size(38, 24);
-            this.txtR.TabIndex = 29;
-            this.txtR.Leave += new System.EventHandler(this.txtR_Leave);
-            // 
-            // txtX
-            // 
-            this.txtX.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtX.Location = new System.Drawing.Point(75, 13);
-            this.txtX.Name = "txtX";
-            this.txtX.Size = new System.Drawing.Size(34, 24);
-            this.txtX.TabIndex = 27;
-            this.txtX.Leave += new System.EventHandler(this.txtX_Leave);
-            // 
-            // txtY
-            // 
-            this.txtY.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtY.Location = new System.Drawing.Point(138, 13);
-            this.txtY.Name = "txtY";
-            this.txtY.Size = new System.Drawing.Size(34, 24);
-            this.txtY.TabIndex = 28;
-            this.txtY.Leave += new System.EventHandler(this.txtY_Leave);
             // 
             // lbTam0
             // 
@@ -246,9 +183,9 @@
             this.lbX.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbX.Location = new System.Drawing.Point(55, 15);
             this.lbX.Name = "lbX";
-            this.lbX.Size = new System.Drawing.Size(27, 18);
+            this.lbX.Size = new System.Drawing.Size(35, 18);
             this.lbX.TabIndex = 20;
-            this.lbX.Text = "x : ";
+            this.lbX.Text = "X = ";
             // 
             // lbY
             // 
@@ -256,9 +193,9 @@
             this.lbY.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbY.Location = new System.Drawing.Point(116, 15);
             this.lbY.Name = "lbY";
-            this.lbY.Size = new System.Drawing.Size(27, 18);
+            this.lbY.Size = new System.Drawing.Size(34, 18);
             this.lbY.TabIndex = 21;
-            this.lbY.Text = "y : ";
+            this.lbY.Text = "Y = ";
             // 
             // lbR
             // 
@@ -266,9 +203,9 @@
             this.lbR.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbR.Location = new System.Drawing.Point(178, 16);
             this.lbR.Name = "lbR";
-            this.lbR.Size = new System.Drawing.Size(66, 18);
+            this.lbR.Size = new System.Drawing.Size(86, 18);
             this.lbR.TabIndex = 24;
-            this.lbR.Text = "Radius : ";
+            this.lbR.Text = "Radius R = ";
             // 
             // gbFuntions
             // 
@@ -535,6 +472,76 @@
             this.picMain.TabIndex = 31;
             this.picMain.TabStop = false;
             // 
+            // lbX1v
+            // 
+            this.lbX1v.AutoSize = true;
+            this.lbX1v.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbX1v.Location = new System.Drawing.Point(50, 21);
+            this.lbX1v.Name = "lbX1v";
+            this.lbX1v.Size = new System.Drawing.Size(16, 18);
+            this.lbX1v.TabIndex = 15;
+            this.lbX1v.Text = "0";
+            // 
+            // lbY1v
+            // 
+            this.lbY1v.AutoSize = true;
+            this.lbY1v.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbY1v.Location = new System.Drawing.Point(120, 22);
+            this.lbY1v.Name = "lbY1v";
+            this.lbY1v.Size = new System.Drawing.Size(16, 18);
+            this.lbY1v.TabIndex = 16;
+            this.lbY1v.Text = "0";
+            // 
+            // lbX2v
+            // 
+            this.lbX2v.AutoSize = true;
+            this.lbX2v.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbX2v.Location = new System.Drawing.Point(193, 21);
+            this.lbX2v.Name = "lbX2v";
+            this.lbX2v.Size = new System.Drawing.Size(16, 18);
+            this.lbX2v.TabIndex = 17;
+            this.lbX2v.Text = "0";
+            // 
+            // lbY2v
+            // 
+            this.lbY2v.AutoSize = true;
+            this.lbY2v.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbY2v.Location = new System.Drawing.Point(273, 21);
+            this.lbY2v.Name = "lbY2v";
+            this.lbY2v.Size = new System.Drawing.Size(16, 18);
+            this.lbY2v.TabIndex = 18;
+            this.lbY2v.Text = "0";
+            // 
+            // lbXv
+            // 
+            this.lbXv.AutoSize = true;
+            this.lbXv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbXv.Location = new System.Drawing.Point(85, 15);
+            this.lbXv.Name = "lbXv";
+            this.lbXv.Size = new System.Drawing.Size(16, 18);
+            this.lbXv.TabIndex = 25;
+            this.lbXv.Text = "0";
+            // 
+            // lbYv
+            // 
+            this.lbYv.AutoSize = true;
+            this.lbYv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbYv.Location = new System.Drawing.Point(146, 14);
+            this.lbYv.Name = "lbYv";
+            this.lbYv.Size = new System.Drawing.Size(16, 18);
+            this.lbYv.TabIndex = 26;
+            this.lbYv.Text = "0";
+            // 
+            // lbRv
+            // 
+            this.lbRv.AutoSize = true;
+            this.lbRv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRv.Location = new System.Drawing.Point(260, 15);
+            this.lbRv.Name = "lbRv";
+            this.lbRv.Size = new System.Drawing.Size(16, 18);
+            this.lbRv.TabIndex = 27;
+            this.lbRv.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -570,19 +577,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbStraight;
-        private System.Windows.Forms.TextBox txtY2;
-        private System.Windows.Forms.TextBox txtX2;
         private System.Windows.Forms.Label lbX2;
-        private System.Windows.Forms.TextBox txtX1;
         private System.Windows.Forms.Label lbY2;
         private System.Windows.Forms.Label lbX1;
-        private System.Windows.Forms.TextBox txtY1;
         private System.Windows.Forms.Label lbY1;
         private System.Windows.Forms.Label lbC;
         private System.Windows.Forms.GroupBox gbCircle;
-        private System.Windows.Forms.TextBox txtR;
-        private System.Windows.Forms.TextBox txtX;
-        private System.Windows.Forms.TextBox txtY;
         private System.Windows.Forms.Label lbTam0;
         private System.Windows.Forms.Label lbX;
         private System.Windows.Forms.Label lbY;
@@ -615,6 +615,13 @@
         private System.Windows.Forms.Label lbSize;
         private System.Windows.Forms.Button btnCurColor;
         private System.Windows.Forms.PictureBox picMain;
+        private System.Windows.Forms.Label lbY2v;
+        private System.Windows.Forms.Label lbX2v;
+        private System.Windows.Forms.Label lbY1v;
+        private System.Windows.Forms.Label lbX1v;
+        private System.Windows.Forms.Label lbRv;
+        private System.Windows.Forms.Label lbYv;
+        private System.Windows.Forms.Label lbXv;
     }
 }
 
