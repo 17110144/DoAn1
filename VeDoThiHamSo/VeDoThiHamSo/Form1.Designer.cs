@@ -40,10 +40,6 @@
             this.lbY = new System.Windows.Forms.Label();
             this.lbR = new System.Windows.Forms.Label();
             this.gbFuntions = new System.Windows.Forms.GroupBox();
-            this.txtC = new System.Windows.Forms.TextBox();
-            this.txtD = new System.Windows.Forms.TextBox();
-            this.txtB = new System.Windows.Forms.TextBox();
-            this.txtA = new System.Windows.Forms.TextBox();
             this.lbA = new System.Windows.Forms.Label();
             this.lbB = new System.Windows.Forms.Label();
             this.lbD = new System.Windows.Forms.Label();
@@ -74,6 +70,10 @@
             this.lbXv = new System.Windows.Forms.Label();
             this.lbYv = new System.Windows.Forms.Label();
             this.lbRv = new System.Windows.Forms.Label();
+            this.lbAv = new System.Windows.Forms.Label();
+            this.lbBv = new System.Windows.Forms.Label();
+            this.lbCv = new System.Windows.Forms.Label();
+            this.lbDv = new System.Windows.Forms.Label();
             this.gbStraight.SuspendLayout();
             this.gbCircle.SuspendLayout();
             this.gbFuntions.SuspendLayout();
@@ -144,11 +144,11 @@
             // 
             this.lbC.AutoSize = true;
             this.lbC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbC.Location = new System.Drawing.Point(145, 22);
+            this.lbC.Location = new System.Drawing.Point(145, 17);
             this.lbC.Name = "lbC";
-            this.lbC.Size = new System.Drawing.Size(24, 18);
+            this.lbC.Size = new System.Drawing.Size(29, 18);
             this.lbC.TabIndex = 4;
-            this.lbC.Text = "c :";
+            this.lbC.Text = "c =";
             // 
             // gbCircle
             // 
@@ -209,10 +209,10 @@
             // 
             // gbFuntions
             // 
-            this.gbFuntions.Controls.Add(this.txtC);
-            this.gbFuntions.Controls.Add(this.txtD);
-            this.gbFuntions.Controls.Add(this.txtB);
-            this.gbFuntions.Controls.Add(this.txtA);
+            this.gbFuntions.Controls.Add(this.lbDv);
+            this.gbFuntions.Controls.Add(this.lbCv);
+            this.gbFuntions.Controls.Add(this.lbBv);
+            this.gbFuntions.Controls.Add(this.lbAv);
             this.gbFuntions.Controls.Add(this.lbA);
             this.gbFuntions.Controls.Add(this.lbB);
             this.gbFuntions.Controls.Add(this.lbC);
@@ -224,71 +224,35 @@
             this.gbFuntions.TabIndex = 35;
             this.gbFuntions.TabStop = false;
             // 
-            // txtC
-            // 
-            this.txtC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtC.Location = new System.Drawing.Point(175, 19);
-            this.txtC.Name = "txtC";
-            this.txtC.Size = new System.Drawing.Size(37, 24);
-            this.txtC.TabIndex = 9;
-            this.txtC.Leave += new System.EventHandler(this.txtC_Leave);
-            // 
-            // txtD
-            // 
-            this.txtD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtD.Location = new System.Drawing.Point(250, 19);
-            this.txtD.Name = "txtD";
-            this.txtD.Size = new System.Drawing.Size(37, 24);
-            this.txtD.TabIndex = 10;
-            this.txtD.Leave += new System.EventHandler(this.txtD_Leave);
-            // 
-            // txtB
-            // 
-            this.txtB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtB.Location = new System.Drawing.Point(102, 19);
-            this.txtB.Name = "txtB";
-            this.txtB.Size = new System.Drawing.Size(37, 24);
-            this.txtB.TabIndex = 8;
-            this.txtB.Leave += new System.EventHandler(this.txtB_Leave);
-            // 
-            // txtA
-            // 
-            this.txtA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtA.Location = new System.Drawing.Point(32, 19);
-            this.txtA.Name = "txtA";
-            this.txtA.Size = new System.Drawing.Size(37, 24);
-            this.txtA.TabIndex = 7;
-            this.txtA.Leave += new System.EventHandler(this.txtA_Leave);
-            // 
             // lbA
             // 
             this.lbA.AutoSize = true;
             this.lbA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbA.Location = new System.Drawing.Point(7, 22);
+            this.lbA.Location = new System.Drawing.Point(6, 17);
             this.lbA.Name = "lbA";
-            this.lbA.Size = new System.Drawing.Size(24, 18);
+            this.lbA.Size = new System.Drawing.Size(29, 18);
             this.lbA.TabIndex = 2;
-            this.lbA.Text = "a :";
+            this.lbA.Text = "a =";
             // 
             // lbB
             // 
             this.lbB.AutoSize = true;
             this.lbB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbB.Location = new System.Drawing.Point(81, 22);
+            this.lbB.Location = new System.Drawing.Point(81, 18);
             this.lbB.Name = "lbB";
-            this.lbB.Size = new System.Drawing.Size(24, 18);
+            this.lbB.Size = new System.Drawing.Size(29, 18);
             this.lbB.TabIndex = 3;
-            this.lbB.Text = "b :";
+            this.lbB.Text = "b =";
             // 
             // lbD
             // 
             this.lbD.AutoSize = true;
             this.lbD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbD.Location = new System.Drawing.Point(224, 22);
+            this.lbD.Location = new System.Drawing.Point(224, 18);
             this.lbD.Name = "lbD";
-            this.lbD.Size = new System.Drawing.Size(28, 18);
+            this.lbD.Size = new System.Drawing.Size(29, 18);
             this.lbD.TabIndex = 5;
-            this.lbD.Text = "d : ";
+            this.lbD.Text = "d =";
             // 
             // menuStrip
             // 
@@ -542,6 +506,46 @@
             this.lbRv.TabIndex = 27;
             this.lbRv.Text = "0";
             // 
+            // lbAv
+            // 
+            this.lbAv.AutoSize = true;
+            this.lbAv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAv.Location = new System.Drawing.Point(32, 18);
+            this.lbAv.Name = "lbAv";
+            this.lbAv.Size = new System.Drawing.Size(16, 18);
+            this.lbAv.TabIndex = 19;
+            this.lbAv.Text = "0";
+            // 
+            // lbBv
+            // 
+            this.lbBv.AutoSize = true;
+            this.lbBv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBv.Location = new System.Drawing.Point(107, 18);
+            this.lbBv.Name = "lbBv";
+            this.lbBv.Size = new System.Drawing.Size(16, 18);
+            this.lbBv.TabIndex = 20;
+            this.lbBv.Text = "0";
+            // 
+            // lbCv
+            // 
+            this.lbCv.AutoSize = true;
+            this.lbCv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCv.Location = new System.Drawing.Point(171, 18);
+            this.lbCv.Name = "lbCv";
+            this.lbCv.Size = new System.Drawing.Size(16, 18);
+            this.lbCv.TabIndex = 21;
+            this.lbCv.Text = "0";
+            // 
+            // lbDv
+            // 
+            this.lbDv.AutoSize = true;
+            this.lbDv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDv.Location = new System.Drawing.Point(250, 18);
+            this.lbDv.Name = "lbDv";
+            this.lbDv.Size = new System.Drawing.Size(16, 18);
+            this.lbDv.TabIndex = 22;
+            this.lbDv.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -588,10 +592,6 @@
         private System.Windows.Forms.Label lbY;
         private System.Windows.Forms.Label lbR;
         private System.Windows.Forms.GroupBox gbFuntions;
-        private System.Windows.Forms.TextBox txtC;
-        private System.Windows.Forms.TextBox txtD;
-        private System.Windows.Forms.TextBox txtB;
-        private System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.Label lbA;
         private System.Windows.Forms.Label lbB;
         private System.Windows.Forms.Label lbD;
@@ -622,6 +622,10 @@
         private System.Windows.Forms.Label lbRv;
         private System.Windows.Forms.Label lbYv;
         private System.Windows.Forms.Label lbXv;
+        private System.Windows.Forms.Label lbDv;
+        private System.Windows.Forms.Label lbCv;
+        private System.Windows.Forms.Label lbBv;
+        private System.Windows.Forms.Label lbAv;
     }
 }
 

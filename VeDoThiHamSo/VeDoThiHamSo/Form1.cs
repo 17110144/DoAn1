@@ -113,58 +113,58 @@ namespace VeDoThiHamSo
         {
             lbA.Enabled = true;
             lbA.Visible = true;
-            txtA.Enabled = true;
-            txtA.Visible = true;
+            lbAv.Enabled = true;
+            lbAv.Visible = true;
         }
         private void offA()
         {
             lbA.Enabled = false;
             lbA.Visible = false;
-            txtA.Enabled = false;
-            txtA.Visible = false;
+            lbAv.Enabled = false;
+            lbAv.Visible = false;
         }
         private void onB()
         {
             lbB.Enabled = true;
             lbB.Visible = true;
-            txtB.Enabled = true;
-            txtB.Visible = true;
+            lbBv.Enabled = true;
+            lbBv.Visible = true;
         }
         private void offB()
         {
             lbB.Enabled = false;
             lbB.Visible = false;
-            txtB.Enabled = false;
-            txtB.Visible = false;
+            lbBv.Enabled = false;
+            lbBv.Visible = false;
         }
 
         private void onC()
         {
             lbC.Enabled = true;
             lbC.Visible = true;
-            txtC.Enabled = true;
-            txtC.Visible = true;
+            lbCv.Enabled = true;
+            lbCv.Visible = true;
         }
         private void offC()
         {
             lbC.Enabled = false;
             lbC.Visible = false;
-            txtC.Enabled = false;
-            txtC.Visible = false;
+            lbCv.Enabled = false;
+            lbCv.Visible = false;
         }
         private void onD()
         {
             lbD.Enabled = true;
             lbD.Visible = true;
-            txtD.Enabled = true;
-            txtD.Visible = true;
+            lbDv.Enabled = true;
+            lbDv.Visible = true;
         }
         private void offD()
         {
             lbD.Enabled = false;
             lbD.Visible = false;
-            txtD.Enabled = false;
-            txtD.Visible = false;
+            lbDv.Enabled = false;
+            lbDv.Visible = false;
         }
         private void onAll()
         {
@@ -254,28 +254,25 @@ namespace VeDoThiHamSo
                     break;
                 case "Quadratic":
                     {
-                        a = Convert.ToDouble(txtA.Text.ToString());
-                        b = Convert.ToDouble(txtB.Text.ToString());
-                        c = Convert.ToDouble(txtC.Text.ToString());
                         Draw();
                     }
                     break;
                 case "Cubic":
                     {
-                        a = Convert.ToDouble(txtA.Text.ToString());
-                        b = Convert.ToDouble(txtB.Text.ToString());
-                        c = Convert.ToDouble(txtC.Text.ToString());
-                        d = Convert.ToDouble(txtD.Text.ToString());
+                        a = Convert.ToDouble(lbAv.Text.ToString());
+                        b = Convert.ToDouble(lbBv.Text.ToString());
+                        c = Convert.ToDouble(lbCv.Text.ToString());
+                        d = Convert.ToDouble(lbDv.Text.ToString());
                         Draw();
 
                     }
                     break;
                 case "axb/cxd":
                     {
-                        a = Convert.ToDouble(txtA.Text.ToString());
-                        b = Convert.ToDouble(txtB.Text.ToString());
-                        c = Convert.ToDouble(txtC.Text.ToString());
-                        d = Convert.ToDouble(txtD.Text.ToString());
+                        a = Convert.ToDouble(lbAv.Text.ToString());
+                        b = Convert.ToDouble(lbBv.Text.ToString());
+                        c = Convert.ToDouble(lbCv.Text.ToString());
+                        d = Convert.ToDouble(lbDv.Text.ToString());
                         Draw();
                     }
                     break;
@@ -296,27 +293,27 @@ namespace VeDoThiHamSo
                     break;
                 case "Asinwx":
                     {
-                        a = Convert.ToDouble(txtA.Text.ToString());
-                        b = Convert.ToDouble(txtB.Text.ToString());
+                        a = Convert.ToDouble(lbAv.Text.ToString());
+                        b = Convert.ToDouble(lbBv.Text.ToString());
                         Draw();
                     }
                     break;
                 case "Atanwx":
                     {
-                        a = Convert.ToDouble(txtA.Text.ToString());
-                        b = Convert.ToDouble(txtB.Text.ToString());
+                        a = Convert.ToDouble(lbAv.Text.ToString());
+                        b = Convert.ToDouble(lbBv.Text.ToString());
                         Draw();
                     }
                     break;
                 case "Logax":
                     {
-                        a = Convert.ToDouble(txtA.Text.ToString());
+                        a = Convert.ToDouble(lbAv.Text.ToString());
                         Draw();
                     }
                     break;
                 case "a^x":
                     {
-                        a = Convert.ToDouble(txtA.Text.ToString());
+                        a = Convert.ToDouble(lbAv.Text.ToString());
                         Draw();
                     }
                     break;
@@ -351,6 +348,11 @@ namespace VeDoThiHamSo
             offGbCircle();
             gbFuntions.Text = "f(x) = ax^2 + bx + c";
             F.Sender("Quadratic");
+            InsertQuadraticValue q = new InsertQuadraticValue();
+            q.ShowDialog();
+            this.lbAv.Text = a.ToString();
+            this.lbBv.Text = b.ToString();
+            this.lbCv.Text = c.ToString();
         }
 
         private void CubicFunctionMTS_Click(object sender, EventArgs e)
@@ -411,8 +413,6 @@ namespace VeDoThiHamSo
             F.Sender("Asinwx");
         }
 
-
-
         private void AtanwxMTS_Click(object sender, EventArgs e)
         {
             sFlag = "Atanwx";
@@ -456,6 +456,7 @@ namespace VeDoThiHamSo
         {
             CreateNew();
         }
+
         private void btnCurColor_Click(object sender, EventArgs e)
         {
             ColorDialog cdl = new ColorDialog();
@@ -481,56 +482,12 @@ namespace VeDoThiHamSo
         }
 
 
-        #region CheckValue
         static public bool IsNumber(string pText)
         {
             Regex regex = null;
             regex = new Regex(@"^[-+]?[0-9]*\.?[0-9]+$");
             return regex.IsMatch(pText);
-        }
-
-
-        private void txtA_Leave(object sender, EventArgs e)
-        {
-            if (!IsNumber(txtA.Text))
-            {
-                MessageBox.Show("Giá trị A không đúng! Hãy nhập lại!");
-                txtA.Focus();
-                txtA.SelectAll();
-            }
-        }
-
-        private void txtB_Leave(object sender, EventArgs e)
-        {
-            if (!IsNumber(txtB.Text))
-            {
-                MessageBox.Show("Giá trị B không đúng! Hãy nhập lại!");
-                txtB.Focus();
-                txtB.SelectAll();
-            }
-        }
-
-        private void txtC_Leave(object sender, EventArgs e)
-        {
-            if (!IsNumber(txtC.Text))
-            {
-                MessageBox.Show("Giá trị C không đúng! Hãy nhập lại!");
-                txtC.Focus();
-                txtC.SelectAll();
-            }
-        }
-
-        private void txtD_Leave(object sender, EventArgs e)
-        {
-            if (!IsNumber(txtD.Text))
-            {
-                MessageBox.Show("Giá trị D không đúng! Hãy nhập lại!");
-                txtD.Focus();
-                txtD.SelectAll();
-            }
-        }
-      
-        #endregion
-
+        }    
+       
     }
 }
