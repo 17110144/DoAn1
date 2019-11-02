@@ -73,6 +73,7 @@ namespace VeDoThiHamSo
         private void InsertCubicValue_Load(object sender, EventArgs e)
         {
             txtA.Focus();
+            txtA.Text = "0";
             txtA.Select();
         }
     }

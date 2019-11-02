@@ -72,6 +72,7 @@ namespace VeDoThiHamSo
         private void InsertAxBCxDValue_Load(object sender, EventArgs e)
         {
             txtA.Focus();
+            txtA.Text = "0";
             txtA.Select();
         }
     }

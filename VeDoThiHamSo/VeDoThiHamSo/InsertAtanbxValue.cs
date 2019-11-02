@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace VeDoThiHamSo
 {
-    public partial class InsertQuadraticValue : Form
+    public partial class InsertAtanbxValue : Form
     {
-        public InsertQuadraticValue()
+        public InsertAtanbxValue()
         {
             InitializeComponent();
         }
 
+        private void InsertAtanbxValue_Load(object sender, EventArgs e)
+        {
+            txtA.Focus();
+            txtA.Text = "0";
+            txtA.Select();
+        }
         private void btnOK_Click(object sender, EventArgs e)
         {
             Form1.a = Convert.ToDouble(this.txtA.Text);
             Form1.b = Convert.ToDouble(this.txtB.Text);
-            Form1.c = Convert.ToDouble(this.txtC.Text);
             this.Close();
         }
 
@@ -29,6 +34,7 @@ namespace VeDoThiHamSo
         {
             this.Close();
         }
+
         private void txtA_Leave(object sender, EventArgs e)
         {
             if (!Form1.IsNumber(txtA.Text))
@@ -47,23 +53,6 @@ namespace VeDoThiHamSo
                 txtB.Focus();
                 txtB.SelectAll();
             }
-        }
-
-        private void txtC_Leave(object sender, EventArgs e)
-        {
-            if (!Form1.IsNumber(txtC.Text))
-            {
-                MessageBox.Show("Giá trị C không đúng! Hãy nhập lại!");
-                txtC.Focus();
-                txtC.SelectAll();
-            }
-        }
-
-        private void InsertQuadraticValue_Load(object sender, EventArgs e)
-        {
-            txtA.Focus();
-            txtA.Text = "0";
-            txtA.Select();
         }
     }
 }

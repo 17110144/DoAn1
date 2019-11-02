@@ -61,6 +61,7 @@ namespace VeDoThiHamSo
         private void InsertCircleValue_Load(object sender, EventArgs e)
         {
             txtX.Focus();
+            txtX.Text = "0";
             txtX.Select();
         }
     }

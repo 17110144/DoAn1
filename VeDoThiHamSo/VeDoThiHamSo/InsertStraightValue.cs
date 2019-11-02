@@ -74,6 +74,7 @@ namespace VeDoThiHamSo
         private void InsertStraightValue_Load(object sender, EventArgs e)
         {
             txtX1.Focus();
+            txtX1.Text = "0";
             txtX1.Select();
         }
     }

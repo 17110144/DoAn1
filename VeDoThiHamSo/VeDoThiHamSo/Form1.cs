@@ -15,8 +15,8 @@ namespace VeDoThiHamSo
     {
         CoordinateAxis ca = new CoordinateAxis();
         Functions F = new Functions();
-        public static string X1="0", X2="0", Y1="0", Y2="0";
-        public static string X, Y, R;
+        public static string X1 = "0", X2 = "0", Y1 = "0", Y2 = "0";
+        public static string X = "0", Y = "0", R = "0";
         public static double a, b, c, d;
         double x;
         Color curColor;
@@ -285,27 +285,21 @@ namespace VeDoThiHamSo
                     break;
                 case "Asinwx":
                     {
-                        a = Convert.ToDouble(lbAv.Text.ToString());
-                        b = Convert.ToDouble(lbBv.Text.ToString());
                         Draw();
                     }
                     break;
                 case "Atanwx":
                     {
-                        a = Convert.ToDouble(lbAv.Text.ToString());
-                        b = Convert.ToDouble(lbBv.Text.ToString());
                         Draw();
                     }
                     break;
                 case "Logax":
                     {
-                        a = Convert.ToDouble(lbAv.Text.ToString());
                         Draw();
                     }
                     break;
                 case "a^x":
                     {
-                        a = Convert.ToDouble(lbAv.Text.ToString());
                         Draw();
                     }
                     break;
@@ -416,6 +410,10 @@ namespace VeDoThiHamSo
             offGbCircle();
             gbFuntions.Text = "f(x) = Asin(bx)";
             F.Sender("Asinwx");
+            InsertAsinbxValue asinx = new InsertAsinbxValue();
+            asinx.ShowDialog();
+            this.lbAv.Text = a.ToString();
+            this.lbBv.Text = b.ToString();
         }
 
         private void AtanwxMTS_Click(object sender, EventArgs e)
@@ -429,6 +427,10 @@ namespace VeDoThiHamSo
             offGbCircle();
             gbFuntions.Text = "f(x) = Atan(bx)";
             F.Sender("Atanwx");
+            InsertAtanbxValue atanx = new InsertAtanbxValue();
+            atanx.ShowDialog();
+            this.lbAv.Text = a.ToString();
+            this.lbBv.Text = b.ToString();
         }
 
 
@@ -442,6 +444,9 @@ namespace VeDoThiHamSo
             offGbCircle();
             gbFuntions.Text = "f(x) = Loga(x)";
             F.Sender("Logax");
+            InsertLogaxValue log = new InsertLogaxValue();
+            log.ShowDialog();
+            this.lbAv.Text = a.ToString();
         }
 
         private void ExponentialFunctionMTS_Click(object sender, EventArgs e)
@@ -454,6 +459,9 @@ namespace VeDoThiHamSo
             offGbCircle();
             gbFuntions.Text = "f(x) = a^x";
             F.Sender("a^x");
+            InsertAexpXValue aexpx = new InsertAexpXValue();
+            aexpx.ShowDialog();
+            this.lbAv.Text = a.ToString();
         }
         #endregion
 
