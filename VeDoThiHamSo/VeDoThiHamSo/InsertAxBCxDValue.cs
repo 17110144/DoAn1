@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace VeDoThiHamSo
 {
-    public partial class InsertQuadraticValue : Form
+    public partial class InsertAxBCxDValue : Form
     {
-        public InsertQuadraticValue()
+        public InsertAxBCxDValue()
         {
             InitializeComponent();
         }
-
         private void btnOK_Click(object sender, EventArgs e)
         {
             Form1.a = Convert.ToDouble(this.txtA.Text);
             Form1.b = Convert.ToDouble(this.txtB.Text);
             Form1.c = Convert.ToDouble(this.txtC.Text);
+            Form1.d = Convert.ToDouble(this.txtD.Text);
             this.Close();
         }
 
@@ -59,7 +59,17 @@ namespace VeDoThiHamSo
             }
         }
 
-        private void InsertQuadraticValue_Load(object sender, EventArgs e)
+        private void txtD_Leave(object sender, EventArgs e)
+        {
+            if (!Form1.IsNumber(txtD.Text))
+            {
+                MessageBox.Show("Giá trị D không đúng! Hãy nhập lại!");
+                txtD.Focus();
+                txtD.SelectAll();
+            }
+        }
+
+        private void InsertAxBCxDValue_Load(object sender, EventArgs e)
         {
             txtA.Focus();
             txtA.Select();

@@ -64,7 +64,7 @@
             this.txtX1.Location = new System.Drawing.Point(62, 10);
             this.txtX1.Name = "txtX1";
             this.txtX1.Size = new System.Drawing.Size(38, 24);
-            this.txtX1.TabIndex = 15;
+            this.txtX1.TabIndex = 1;
             this.txtX1.Leave += new System.EventHandler(this.txtX1_Leave);
             // 
             // lbX1
@@ -73,9 +73,9 @@
             this.lbX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbX1.Location = new System.Drawing.Point(18, 16);
             this.lbX1.Name = "lbX1";
-            this.lbX1.Size = new System.Drawing.Size(35, 18);
+            this.lbX1.Size = new System.Drawing.Size(38, 18);
             this.lbX1.TabIndex = 11;
-            this.lbX1.Text = "x1 : ";
+            this.lbX1.Text = "X1 : ";
             // 
             // lbY1
             // 
@@ -83,9 +83,9 @@
             this.lbY1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbY1.Location = new System.Drawing.Point(118, 16);
             this.lbY1.Name = "lbY1";
-            this.lbY1.Size = new System.Drawing.Size(35, 18);
+            this.lbY1.Size = new System.Drawing.Size(37, 18);
             this.lbY1.TabIndex = 12;
-            this.lbY1.Text = "y1 : ";
+            this.lbY1.Text = "Y1 : ";
             // 
             // txtX2
             // 
@@ -93,7 +93,7 @@
             this.txtX2.Location = new System.Drawing.Point(62, 42);
             this.txtX2.Name = "txtX2";
             this.txtX2.Size = new System.Drawing.Size(38, 24);
-            this.txtX2.TabIndex = 18;
+            this.txtX2.TabIndex = 3;
             this.txtX2.Leave += new System.EventHandler(this.txtX2_Leave);
             // 
             // lbX2
@@ -102,9 +102,9 @@
             this.lbX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbX2.Location = new System.Drawing.Point(18, 48);
             this.lbX2.Name = "lbX2";
-            this.lbX2.Size = new System.Drawing.Size(35, 18);
+            this.lbX2.Size = new System.Drawing.Size(38, 18);
             this.lbX2.TabIndex = 13;
-            this.lbX2.Text = "x2 : ";
+            this.lbX2.Text = "X2 : ";
             // 
             // txtY1
             // 
@@ -112,7 +112,7 @@
             this.txtY1.Location = new System.Drawing.Point(159, 13);
             this.txtY1.Name = "txtY1";
             this.txtY1.Size = new System.Drawing.Size(38, 24);
-            this.txtY1.TabIndex = 17;
+            this.txtY1.TabIndex = 2;
             this.txtY1.Leave += new System.EventHandler(this.txtY1_Leave);
             // 
             // lbY2
@@ -121,9 +121,9 @@
             this.lbY2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbY2.Location = new System.Drawing.Point(118, 48);
             this.lbY2.Name = "lbY2";
-            this.lbY2.Size = new System.Drawing.Size(35, 18);
+            this.lbY2.Size = new System.Drawing.Size(37, 18);
             this.lbY2.TabIndex = 14;
-            this.lbY2.Text = "y2 : ";
+            this.lbY2.Text = "Y2 : ";
             // 
             // txtY2
             // 
@@ -131,7 +131,7 @@
             this.txtY2.Location = new System.Drawing.Point(159, 43);
             this.txtY2.Name = "txtY2";
             this.txtY2.Size = new System.Drawing.Size(38, 24);
-            this.txtY2.TabIndex = 16;
+            this.txtY2.TabIndex = 4;
             this.txtY2.Leave += new System.EventHandler(this.txtY2_Leave);
             // 
             // btnCancel
@@ -140,7 +140,7 @@
             this.btnCancel.Location = new System.Drawing.Point(126, 94);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(91, 33);
-            this.btnCancel.TabIndex = 34;
+            this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -151,7 +151,7 @@
             this.btnOK.Location = new System.Drawing.Point(12, 94);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(97, 33);
-            this.btnOK.TabIndex = 33;
+            this.btnOK.TabIndex = 5;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -166,6 +166,7 @@
             this.Controls.Add(this.btnOK);
             this.Name = "InsertStraightValue";
             this.Text = "InsertStraightValue";
+            this.Load += new System.EventHandler(this.InsertStraightValue_Load);
             this.gBStraight.ResumeLayout(false);
             this.gBStraight.PerformLayout();
             this.ResumeLayout(false);

@@ -70,5 +70,11 @@ namespace VeDoThiHamSo
                 txtY2.SelectAll();
             }
         }
+
+        private void InsertStraightValue_Load(object sender, EventArgs e)
+        {
+            txtX1.Focus();
+            txtX1.Select();
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace VeDoThiHamSo
     {
         CoordinateAxis ca = new CoordinateAxis();
         Functions F = new Functions();
-        public static string X1, X2, Y1, Y2;
+        public static string X1="0", X2="0", Y1="0", Y2="0";
         public static string X, Y, R;
         public static double a, b, c, d;
         double x;
@@ -259,20 +259,12 @@ namespace VeDoThiHamSo
                     break;
                 case "Cubic":
                     {
-                        a = Convert.ToDouble(lbAv.Text.ToString());
-                        b = Convert.ToDouble(lbBv.Text.ToString());
-                        c = Convert.ToDouble(lbCv.Text.ToString());
-                        d = Convert.ToDouble(lbDv.Text.ToString());
                         Draw();
 
                     }
                     break;
                 case "axb/cxd":
                     {
-                        a = Convert.ToDouble(lbAv.Text.ToString());
-                        b = Convert.ToDouble(lbBv.Text.ToString());
-                        c = Convert.ToDouble(lbCv.Text.ToString());
-                        d = Convert.ToDouble(lbDv.Text.ToString());
                         Draw();
                     }
                     break;
@@ -364,6 +356,13 @@ namespace VeDoThiHamSo
             offGbCircle();
             gbFuntions.Text = "f(x) = ax^3 + bx^2 + cx + d";
             F.Sender("Cubic");
+            InsertCubicValue cb = new InsertCubicValue();
+            cb.ShowDialog();
+            this.lbAv.Text = a.ToString();
+            this.lbBv.Text = b.ToString();
+            this.lbCv.Text = c.ToString();
+            this.lbDv.Text = d.ToString();
+
         }
 
         private void YaxbcxdToolStripMenuItem_Click(object sender, EventArgs e)
@@ -375,6 +374,12 @@ namespace VeDoThiHamSo
             offGbCircle();
             gbFuntions.Text = "f(x) = (ax + b) / (cx + d)";
             F.Sender("axb/cxd");
+            InsertAxBCxDValue axbcxd = new InsertAxBCxDValue();
+            axbcxd.ShowDialog();
+            this.lbAv.Text = a.ToString();
+            this.lbBv.Text = b.ToString();
+            this.lbCv.Text = c.ToString();
+            this.lbDv.Text = d.ToString();
         }
 
         private void CircleMTS_Click(object sender, EventArgs e)

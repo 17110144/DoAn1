@@ -1,6 +1,6 @@
 ﻿namespace VeDoThiHamSo
 {
-    partial class InsertQuadraticValue
+    partial class InsertCubicValue
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
             this.txtA = new System.Windows.Forms.TextBox();
             this.lbA = new System.Windows.Forms.Label();
             this.lbB = new System.Windows.Forms.Label();
             this.lbC = new System.Windows.Forms.Label();
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtC = new System.Windows.Forms.TextBox();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnOK = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtD = new System.Windows.Forms.TextBox();
+            this.lbD = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(207, 18);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "f(x) = ax^3 + bx^2 + cx + d";
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(109, 152);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(69, 33);
+            this.btnCancel.TabIndex = 6;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnOK
+            // 
+            this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.Location = new System.Drawing.Point(39, 152);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(64, 33);
+            this.btnOK.TabIndex = 5;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // txtA
             // 
             this.txtA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtA.Location = new System.Drawing.Point(56, 44);
+            this.txtA.Location = new System.Drawing.Point(81, 33);
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(95, 24);
             this.txtA.TabIndex = 1;
@@ -52,36 +86,36 @@
             // 
             this.lbA.AutoSize = true;
             this.lbA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbA.Location = new System.Drawing.Point(12, 47);
+            this.lbA.Location = new System.Drawing.Point(37, 36);
             this.lbA.Name = "lbA";
             this.lbA.Size = new System.Drawing.Size(24, 18);
-            this.lbA.TabIndex = 11;
+            this.lbA.TabIndex = 22;
             this.lbA.Text = "a :";
             // 
             // lbB
             // 
             this.lbB.AutoSize = true;
             this.lbB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbB.Location = new System.Drawing.Point(12, 80);
+            this.lbB.Location = new System.Drawing.Point(37, 69);
             this.lbB.Name = "lbB";
             this.lbB.Size = new System.Drawing.Size(24, 18);
-            this.lbB.TabIndex = 12;
+            this.lbB.TabIndex = 23;
             this.lbB.Text = "b :";
             // 
             // lbC
             // 
             this.lbC.AutoSize = true;
             this.lbC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbC.Location = new System.Drawing.Point(12, 107);
+            this.lbC.Location = new System.Drawing.Point(37, 96);
             this.lbC.Name = "lbC";
             this.lbC.Size = new System.Drawing.Size(24, 18);
-            this.lbC.TabIndex = 13;
+            this.lbC.TabIndex = 24;
             this.lbC.Text = "c :";
             // 
             // txtB
             // 
             this.txtB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtB.Location = new System.Drawing.Point(56, 74);
+            this.txtB.Location = new System.Drawing.Point(81, 63);
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(95, 24);
             this.txtB.TabIndex = 2;
@@ -90,49 +124,38 @@
             // txtC
             // 
             this.txtC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtC.Location = new System.Drawing.Point(56, 104);
+            this.txtC.Location = new System.Drawing.Point(81, 93);
             this.txtC.Name = "txtC";
             this.txtC.Size = new System.Drawing.Size(95, 24);
             this.txtC.TabIndex = 3;
             this.txtC.Leave += new System.EventHandler(this.txtC_Leave);
             // 
-            // btnCancel
+            // txtD
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(82, 134);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(69, 33);
-            this.btnCancel.TabIndex = 5;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.txtD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtD.Location = new System.Drawing.Point(81, 122);
+            this.txtD.Name = "txtD";
+            this.txtD.Size = new System.Drawing.Size(95, 24);
+            this.txtD.TabIndex = 4;
+            this.txtD.Leave += new System.EventHandler(this.txtD_Leave);
             // 
-            // btnOK
+            // lbD
             // 
-            this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(12, 134);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(64, 33);
-            this.btnOK.TabIndex = 4;
-            this.btnOK.Text = "OK";
-            this.btnOK.UseVisualStyleBackColor = true;
-            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            this.lbD.AutoSize = true;
+            this.lbD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbD.Location = new System.Drawing.Point(36, 122);
+            this.lbD.Name = "lbD";
+            this.lbD.Size = new System.Drawing.Size(24, 18);
+            this.lbD.TabIndex = 32;
+            this.lbD.Text = "d :";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 18);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "f(x) = ax^2 + bx + c";
-            // 
-            // InsertQuadraticValue
+            // InsertCubicValue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(172, 175);
+            this.ClientSize = new System.Drawing.Size(223, 193);
+            this.Controls.Add(this.lbD);
+            this.Controls.Add(this.txtD);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
@@ -142,9 +165,9 @@
             this.Controls.Add(this.lbC);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.txtC);
-            this.Name = "InsertQuadraticValue";
-            this.Text = "InsertQuadraticValue";
-            this.Load += new System.EventHandler(this.InsertQuadraticValue_Load);
+            this.Name = "InsertCubicValue";
+            this.Text = "InsertCubicValue";
+            this.Load += new System.EventHandler(this.InsertCubicValue_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,14 +175,16 @@
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.Label lbA;
         private System.Windows.Forms.Label lbB;
         private System.Windows.Forms.Label lbC;
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.TextBox txtC;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtD;
+        private System.Windows.Forms.Label lbD;
     }
 }

@@ -65,7 +65,7 @@
             this.txtR.Location = new System.Drawing.Point(97, 40);
             this.txtR.Name = "txtR";
             this.txtR.Size = new System.Drawing.Size(38, 24);
-            this.txtR.TabIndex = 32;
+            this.txtR.TabIndex = 3;
             this.txtR.Leave += new System.EventHandler(this.txtR_Leave);
             // 
             // label6
@@ -94,7 +94,7 @@
             this.txtX.Location = new System.Drawing.Point(98, 12);
             this.txtX.Name = "txtX";
             this.txtX.Size = new System.Drawing.Size(38, 24);
-            this.txtX.TabIndex = 29;
+            this.txtX.TabIndex = 1;
             this.txtX.Leave += new System.EventHandler(this.txtX_Leave);
             // 
             // txtY
@@ -103,7 +103,7 @@
             this.txtY.Location = new System.Drawing.Point(175, 14);
             this.txtY.Name = "txtY";
             this.txtY.Size = new System.Drawing.Size(38, 24);
-            this.txtY.TabIndex = 30;
+            this.txtY.TabIndex = 2;
             this.txtY.Leave += new System.EventHandler(this.txtY_Leave);
             // 
             // btnCancel
@@ -112,7 +112,7 @@
             this.btnCancel.Location = new System.Drawing.Point(122, 79);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(91, 33);
-            this.btnCancel.TabIndex = 34;
+            this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -123,7 +123,7 @@
             this.btnOK.Location = new System.Drawing.Point(12, 79);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(97, 33);
-            this.btnOK.TabIndex = 33;
+            this.btnOK.TabIndex = 4;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -144,6 +144,7 @@
             this.Controls.Add(this.txtY);
             this.Name = "InsertCircleValue";
             this.Text = "InsertCircleValue";
+            this.Load += new System.EventHandler(this.InsertCircleValue_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

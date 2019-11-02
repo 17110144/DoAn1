@@ -57,5 +57,11 @@ namespace VeDoThiHamSo
                 txtR.SelectAll();
             }
         }
+
+        private void InsertCircleValue_Load(object sender, EventArgs e)
+        {
+            txtX.Focus();
+            txtX.Select();
+        }
     }
 }
