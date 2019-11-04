@@ -25,7 +25,7 @@ namespace VeDoThiHamSo
         }
         private void btnOK_Click(object sender, EventArgs e)
         {
-            Form1.a = Convert.ToDouble(this.txtA.Text);
+            Form1.a = Convert.ToDouble(this.txtA.Text);           
             this.Close();
         }
 

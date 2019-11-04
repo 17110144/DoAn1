@@ -54,10 +54,91 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions.cs" />
+    <Compile Include="InsertAexpXValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertAexpXValue.Designer.cs">
+      <DependentUpon>InsertAexpXValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertAsinbxValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertAsinbxValue.Designer.cs">
+      <DependentUpon>InsertAsinbxValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertAtanbxValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertAtanbxValue.Designer.cs">
+      <DependentUpon>InsertAtanbxValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertAxBCxDValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertAxBCxDValue.Designer.cs">
+      <DependentUpon>InsertAxBCxDValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertCircleValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertCircleValue.Designer.cs">
+      <DependentUpon>InsertCircleValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertCubicValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertCubicValue.Designer.cs">
+      <DependentUpon>InsertCubicValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertLogaxValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertLogaxValue.Designer.cs">
+      <DependentUpon>InsertLogaxValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertQuadraticValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertQuadraticValue.Designer.cs">
+      <DependentUpon>InsertQuadraticValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertStraightValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertStraightValue.Designer.cs">
+      <DependentUpon>InsertStraightValue.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertAexpXValue.resx">
+      <DependentUpon>InsertAexpXValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertAsinbxValue.resx">
+      <DependentUpon>InsertAsinbxValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertAtanbxValue.resx">
+      <DependentUpon>InsertAtanbxValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertAxBCxDValue.resx">
+      <DependentUpon>InsertAxBCxDValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertCircleValue.resx">
+      <DependentUpon>InsertCircleValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertCubicValue.resx">
+      <DependentUpon>InsertCubicValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertLogaxValue.resx">
+      <DependentUpon>InsertLogaxValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertQuadraticValue.resx">
+      <DependentUpon>InsertQuadraticValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertStraightValue.resx">
+      <DependentUpon>InsertStraightValue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

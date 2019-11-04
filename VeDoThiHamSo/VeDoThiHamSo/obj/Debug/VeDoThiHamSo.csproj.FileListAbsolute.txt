@@ -26,3 +26,12 @@ D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.Propertie
 D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.csproj.GenerateResource.cache
 D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.exe
 D:\GitHub\DoAn1\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.pdb
+D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertStraightValue.resources
+D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertCircleValue.resources
+D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertQuadraticValue.resources
+D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertCubicValue.resources
+D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertAxBCxDValue.resources
+D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertAsinbxValue.resources
+D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertAtanbxValue.resources
+D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertAexpXValue.resources
+D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertLogaxValue.resources
