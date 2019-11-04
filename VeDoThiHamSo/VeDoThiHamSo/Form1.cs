@@ -21,7 +21,7 @@ namespace VeDoThiHamSo
         double x;
         Color curColor;
         int curPenSize;
-        string sFlag;
+        public static string sFlag;
 
         Bitmap bmp;
 
@@ -333,7 +333,6 @@ namespace VeDoThiHamSo
             offD();
             offGbCircle();
             gbFuntions.Text = "f(x) = ax^2 + bx + c";
-            F.Sender("Quadratic");
             InsertQuadraticValue q = new InsertQuadraticValue();
             q.ShowDialog();
             this.lbAv.Text = a.ToString();
@@ -349,7 +348,6 @@ namespace VeDoThiHamSo
             onAll();
             offGbCircle();
             gbFuntions.Text = "f(x) = ax^3 + bx^2 + cx + d";
-            F.Sender("Cubic");
             InsertCubicValue cb = new InsertCubicValue();
             cb.ShowDialog();
             this.lbAv.Text = a.ToString();
@@ -367,7 +365,6 @@ namespace VeDoThiHamSo
             onAll();
             offGbCircle();
             gbFuntions.Text = "f(x) = (ax + b) / (cx + d)";
-            F.Sender("axb/cxd");
             InsertAxBCxDValue axbcxd = new InsertAxBCxDValue();
             axbcxd.ShowDialog();
             this.lbAv.Text = a.ToString();
@@ -409,7 +406,6 @@ namespace VeDoThiHamSo
             onB();
             offGbCircle();
             gbFuntions.Text = "f(x) = Asin(bx)";
-            F.Sender("Asinwx");
             InsertAsinbxValue asinx = new InsertAsinbxValue();
             asinx.ShowDialog();
             this.lbAv.Text = a.ToString();
@@ -426,7 +422,6 @@ namespace VeDoThiHamSo
             onB();
             offGbCircle();
             gbFuntions.Text = "f(x) = Atan(bx)";
-            F.Sender("Atanwx");
             InsertAtanbxValue atanx = new InsertAtanbxValue();
             atanx.ShowDialog();
             this.lbAv.Text = a.ToString();
@@ -443,7 +438,6 @@ namespace VeDoThiHamSo
             onA();
             offGbCircle();
             gbFuntions.Text = "f(x) = Loga(x)";
-            F.Sender("Logax");
             InsertLogaxValue log = new InsertLogaxValue();
             log.ShowDialog();
             this.lbAv.Text = a.ToString();
@@ -458,7 +452,6 @@ namespace VeDoThiHamSo
             onA();
             offGbCircle();
             gbFuntions.Text = "f(x) = a^x";
-            F.Sender("a^x");
             InsertAexpXValue aexpx = new InsertAexpXValue();
             aexpx.ShowDialog();
             this.lbAv.Text = a.ToString();

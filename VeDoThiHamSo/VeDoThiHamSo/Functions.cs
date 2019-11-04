@@ -13,20 +13,12 @@ namespace VeDoThiHamSo
         public double c;
         public double d;
 
-        public string mess;
-        public delegate void SendMessage(string Message);
-        public SendMessage Sender;
         public Functions()
         {
             a = 0;
             b = 0;
             c = 0;
             d = 0;
-            Sender = new SendMessage(GetMessage);
-        }
-        private void GetMessage(string Message)
-        {
-            this.mess = Message;
         }
 
         public void InPut(double a1, double b1, double c1, double d1)
@@ -39,7 +31,7 @@ namespace VeDoThiHamSo
         public double f(double x)
         {
             double fx = -1;
-            switch (mess)
+            switch (Form1.sFlag)
             {
                 case "Quadratic":
                     {
