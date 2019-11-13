@@ -31,7 +31,7 @@ D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertCircleVal
 D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertQuadraticValue.resources
 D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertCubicValue.resources
 D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertAxBCxDValue.resources
-D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertAsinbxValue.resources
-D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertAtanbxValue.resources
 D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertAexpXValue.resources
 D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertLogaxValue.resources
+D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertAsinwxValue.resources
+D:\GitHub\DoAn1\VeDoThiHamSo\VeDoThiHamSo\obj\Debug\VeDoThiHamSo.InsertAtanwxValue.resources

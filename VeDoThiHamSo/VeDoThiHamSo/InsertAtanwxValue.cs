@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace VeDoThiHamSo
 {
-    public partial class InsertAtanbxValue : Form
+    public partial class InsertAtanwxValue : Form
     {
-        public InsertAtanbxValue()
+        public InsertAtanwxValue()
         {
             InitializeComponent();
         }
-
-        private void InsertAtanbxValue_Load(object sender, EventArgs e)
+        private void InsertAtanwxValue_Load(object sender, EventArgs e)
         {
             txtA.Focus();
             txtA.Text = "0";
+            txtW.Text = "0";
             txtA.Select();
         }
         private void btnOK_Click(object sender, EventArgs e)
         {
             Form1.a = Convert.ToDouble(this.txtA.Text);
-            Form1.b = Convert.ToDouble(this.txtB.Text);
+            Form1.b = Convert.ToDouble(this.txtW.Text);
             this.Close();
         }
 
@@ -45,13 +45,13 @@ namespace VeDoThiHamSo
             }
         }
 
-        private void txtB_Leave(object sender, EventArgs e)
+        private void txtW_Leave(object sender, EventArgs e)
         {
-            if (!Form1.IsNumber(txtB.Text))
+            if (!Form1.IsNumber(txtW.Text))
             {
-                MessageBox.Show("Giá trị B không đúng! Hãy nhập lại!");
-                txtB.Focus();
-                txtB.SelectAll();
+                MessageBox.Show("Giá trị A không đúng! Hãy nhập lại!");
+                txtW.Focus();
+                txtW.SelectAll();
             }
         }
     }

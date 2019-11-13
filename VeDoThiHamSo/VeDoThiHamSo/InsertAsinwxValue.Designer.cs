@@ -1,6 +1,6 @@
 ﻿namespace VeDoThiHamSo
 {
-    partial class InsertAsinbxValue
+    partial class InsertAsinwxValue
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             this.txtA = new System.Windows.Forms.TextBox();
             this.lbA = new System.Windows.Forms.Label();
             this.lbB = new System.Windows.Forms.Label();
-            this.txtB = new System.Windows.Forms.TextBox();
+            this.txtW = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -43,9 +43,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 18);
+            this.label1.Size = new System.Drawing.Size(112, 18);
             this.label1.TabIndex = 30;
-            this.label1.Text = "f(x) =Asin(bx)";
+            this.label1.Text = "f(x) =Asin(wx)";
             // 
             // btnCancel
             // 
@@ -94,20 +94,20 @@
             this.lbB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbB.Location = new System.Drawing.Point(10, 80);
             this.lbB.Name = "lbB";
-            this.lbB.Size = new System.Drawing.Size(24, 18);
+            this.lbB.Size = new System.Drawing.Size(27, 18);
             this.lbB.TabIndex = 28;
-            this.lbB.Text = "b :";
+            this.lbB.Text = "w :";
             // 
-            // txtB
+            // txtW
             // 
-            this.txtB.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtB.Location = new System.Drawing.Point(54, 74);
-            this.txtB.Name = "txtB";
-            this.txtB.Size = new System.Drawing.Size(95, 24);
-            this.txtB.TabIndex = 23;
-            this.txtB.Leave += new System.EventHandler(this.txtB_Leave);
+            this.txtW.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtW.Location = new System.Drawing.Point(54, 74);
+            this.txtW.Name = "txtW";
+            this.txtW.Size = new System.Drawing.Size(95, 24);
+            this.txtW.TabIndex = 23;
+            this.txtW.Leave += new System.EventHandler(this.txtW_Leave);
             // 
-            // InsertAsinbxValue
+            // InsertAsinwxValue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -118,10 +118,10 @@
             this.Controls.Add(this.txtA);
             this.Controls.Add(this.lbA);
             this.Controls.Add(this.lbB);
-            this.Controls.Add(this.txtB);
-            this.Name = "InsertAsinbxValue";
+            this.Controls.Add(this.txtW);
+            this.Name = "InsertAsinwxValue";
             this.Text = "InsertAsinbxValue";
-            this.Load += new System.EventHandler(this.InsertAsinbxValue_Load);
+            this.Load += new System.EventHandler(this.InsertAsinwxValue_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,6 +135,6 @@
         private System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.Label lbA;
         private System.Windows.Forms.Label lbB;
-        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.TextBox txtW;
     }
 }

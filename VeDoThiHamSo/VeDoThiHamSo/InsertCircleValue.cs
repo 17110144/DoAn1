@@ -62,6 +62,8 @@ namespace VeDoThiHamSo
         {
             txtX.Focus();
             txtX.Text = "0";
+            txtR.Text = "0";
+            txtY.Text = "0";
             txtX.Select();
         }
     }

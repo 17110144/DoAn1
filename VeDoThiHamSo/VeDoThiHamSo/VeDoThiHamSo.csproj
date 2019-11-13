@@ -60,17 +60,17 @@
     <Compile Include="InsertAexpXValue.Designer.cs">
       <DependentUpon>InsertAexpXValue.cs</DependentUpon>
     </Compile>
-    <Compile Include="InsertAsinbxValue.cs">
+    <Compile Include="InsertAsinwxValue.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InsertAsinbxValue.Designer.cs">
-      <DependentUpon>InsertAsinbxValue.cs</DependentUpon>
+    <Compile Include="InsertAsinwxValue.Designer.cs">
+      <DependentUpon>InsertAsinwxValue.cs</DependentUpon>
     </Compile>
-    <Compile Include="InsertAtanbxValue.cs">
+    <Compile Include="InsertAtanwxValue.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InsertAtanbxValue.Designer.cs">
-      <DependentUpon>InsertAtanbxValue.cs</DependentUpon>
+    <Compile Include="InsertAtanwxValue.Designer.cs">
+      <DependentUpon>InsertAtanwxValue.cs</DependentUpon>
     </Compile>
     <Compile Include="InsertAxBCxDValue.cs">
       <SubType>Form</SubType>
@@ -116,11 +116,11 @@
     <EmbeddedResource Include="InsertAexpXValue.resx">
       <DependentUpon>InsertAexpXValue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InsertAsinbxValue.resx">
-      <DependentUpon>InsertAsinbxValue.cs</DependentUpon>
+    <EmbeddedResource Include="InsertAsinwxValue.resx">
+      <DependentUpon>InsertAsinwxValue.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InsertAtanbxValue.resx">
-      <DependentUpon>InsertAtanbxValue.cs</DependentUpon>
+    <EmbeddedResource Include="InsertAtanwxValue.resx">
+      <DependentUpon>InsertAtanwxValue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InsertAxBCxDValue.resx">
       <DependentUpon>InsertAxBCxDValue.cs</DependentUpon>

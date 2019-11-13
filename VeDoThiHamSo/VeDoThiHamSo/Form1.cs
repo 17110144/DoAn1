@@ -41,8 +41,8 @@ namespace VeDoThiHamSo
             offGbCircle();
             ThemGiaTri();
 
-            ca.min = -100;
-            ca.max = 100;
+            ca.min = -10;
+            ca.max = 10;
 
             ca.max_x = picMain.Width;
             ca.max_y = picMain.Height;
@@ -60,14 +60,13 @@ namespace VeDoThiHamSo
 
             Pen pen = new Pen(curColor, curPenSize);
             x = ca.min;
-            dx = 1.0f / ca.Scale;
+            dx = (1d / ca.Scale);
 
             F.InPut(a, b, c, d);
 
             fx1 = F.f(x);
             x1 = ca.x0 + (int)(x * ca.Scale);
             y1 = ca.y0 - (int)(fx1 * ca.Scale);
-
 
             while (x < ca.max)
             {
@@ -80,7 +79,7 @@ namespace VeDoThiHamSo
                 {
                     if (!(fx1 * fx2 < 0 && Math.Abs((int)(fx2 - fx1)) > ca.Scale / 2))
                     {
-                        ca.g.DrawLine(pen, new PointF(x1, y1), new PointF(x2, y2));
+                        ca.g.DrawLine(pen, new Point(x1, y1), new Point(x2, y2));
                     }
                 }
                 catch { }
@@ -89,10 +88,6 @@ namespace VeDoThiHamSo
                 y1 = y2;
                 fx1 = fx2;
             }
-        }
-        public void Draw()
-        {
-            DrawFuntion();
             picMain.Image = bmp;
         }
 
@@ -213,7 +208,6 @@ namespace VeDoThiHamSo
         {
             float xt = float.Parse(Convert.ToString(ca.x0 + (x * ca.Scale)));
             return xt;
-
         }
         private float findYt(double y)
         {
@@ -254,53 +248,42 @@ namespace VeDoThiHamSo
                     break;
                 case "Quadratic":
                     {
-                        Draw();
+                        DrawFuntion();
                     }
                     break;
                 case "Cubic":
                     {
-                        Draw();
-
+                        DrawFuntion();
                     }
                     break;
                 case "axb/cxd":
                     {
-                        Draw();
+                        DrawFuntion();
                     }
                     break;
                 case "Circle":
                     {
                         DrawCircle();
-                    }
-                    break;
-                case "Elip":
-                    {
-                        
-                    }
-                    break;
-                case "Hyperbol":
-                    {
-
-                    }
+                    }                    
                     break;
                 case "Asinwx":
                     {
-                        Draw();
+                        DrawFuntion();
                     }
                     break;
                 case "Atanwx":
                     {
-                        Draw();
+                        DrawFuntion();
                     }
                     break;
                 case "Logax":
                     {
-                        Draw();
+                        DrawFuntion();
                     }
                     break;
                 case "a^x":
                     {
-                        Draw();
+                        DrawFuntion();
                     }
                     break;
 
@@ -405,8 +388,8 @@ namespace VeDoThiHamSo
             onA();
             onB();
             offGbCircle();
-            gbFuntions.Text = "f(x) = Asin(bx)";
-            InsertAsinbxValue asinx = new InsertAsinbxValue();
+            gbFuntions.Text = "f(x) = Asin(wx)";
+            InsertAsinwxValue asinx = new InsertAsinwxValue();
             asinx.ShowDialog();
             this.lbAv.Text = a.ToString();
             this.lbBv.Text = b.ToString();
@@ -421,8 +404,8 @@ namespace VeDoThiHamSo
             onA();
             onB();
             offGbCircle();
-            gbFuntions.Text = "f(x) = Atan(bx)";
-            InsertAtanbxValue atanx = new InsertAtanbxValue();
+            gbFuntions.Text = "f(x) = Atan(wx)";
+            InsertAtanwxValue atanx = new InsertAtanwxValue();
             atanx.ShowDialog();
             this.lbAv.Text = a.ToString();
             this.lbBv.Text = b.ToString();
@@ -487,13 +470,11 @@ namespace VeDoThiHamSo
             curPenSize = int.Parse(cbbCurSize.Text.ToString());
         }
 
-
         static public bool IsNumber(string pText)
         {
             Regex regex = null;
             regex = new Regex(@"^[-+]?[0-9]*\.?[0-9]+$");
             return regex.IsMatch(pText);
-        }    
-       
+        }           
     }
 }
